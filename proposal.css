@@ -1,0 +1,21 @@
+body {
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    background-color: lightgray;
+
+}
+p, ul {
+    font-size: 16px;
+}
+ul {
+    color: red;
+}
+h2 {
+    font-size: 30px;
+    color: olive;
+}
+header {
+    padding: .5em;
+    text-align: center;
+    font-size: 120%;
+    color: navy;
+}
