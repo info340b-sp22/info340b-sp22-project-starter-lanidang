@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: none;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(199, 114, 199);
+}
+
+.filterbar-container {
+    flex: none;
+    width: 100%;
+    height: 80px;
+    background: rgb(207, 255, 207);
+}
+
+.card-list-container {
+    padding: 18px;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 30vh;
+    gap: 12px;
+}
+
+.card {
+    background: white;
+    /* border-radius: 12px; */
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+}
+
+.card-main-content {
+    flex: 1;
+}
+
+.card-content-left {
+    flex: none;
+    width: 28px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+.card-price {
+    font-size: 0.9rem;
+}
+
+.card-content-left svg {
+    width: 22px;
+    height: 22px;
+}
+
+.card-extrainfo-container {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .card-list-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    .card {
+        display: flex;
+        height: 150px;
+    }
+    .card img {
+        width: 200px;
+        height: 100%;
+        margin-right: 12px;
+    }
+    .card-content {
+        flex: 1;
+    }
+    .card-title {
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+    .card-price {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: rgb(54, 132, 191);
+    }
+    .card-extrainfo-container {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3px;
+        font-size: 0.80rem;
+        color: gray;
+    }
+    .info-item {
+        display: flex;
+    }
+    .info-name {
+        flex: none;
+        width: 85px;
+    }
+    .info-value {
+        flex: 1;
+    }
+}
