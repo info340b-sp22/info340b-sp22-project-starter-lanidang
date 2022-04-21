@@ -92,17 +92,29 @@ header {
 
 @media (min-width: 576px) {
     .card-list-container {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
+        /* display: flex;
+        flex-direction: column; */
+        /* align-items: stretch; */
+        grid-template-columns: repeat( auto-fit, minmax(450px, 1fr));
+        grid-auto-rows: 170px;
+        gap: 0px;
     }
     .card {
-        display: flex;
+        margin: 12px;
+        padding: 8px;
         height: 150px;
+        display: flex;
+        border-radius: 16px;
+        transition: all 0.1s ease-in-out;
+        cursor: pointer;
+        box-shadow: -1px 3px 10px rgba(201, 201, 201, 0.5);
+    }
+    .card:hover {
+        transform: scale(1.01);
+        background: rgb(225, 241, 254);
     }
     .card img {
-        width: 200px;
+        width: 150px;
         height: 100%;
         margin-right: 12px;
     }
@@ -111,15 +123,21 @@ header {
     }
     .card-title {
         font-size: 1.15rem;
-        font-weight: 600;
+        font-weight: 500;
+    }
+    .card:hover .card-title {
+        font-weight: 700;
     }
     .card-price {
         font-size: 1.25rem;
         font-weight: bold;
         color: rgb(54, 132, 191);
     }
+    .card:hover .card-price {
+        color: rgb(54, 132, 191);
+    }
     .card-extrainfo-container {
-        margin-top: 8px;
+        margin-top: 5px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -138,3 +156,5 @@ header {
         flex: 1;
     }
 }
+
+@media (min-width: 576px) {}
