@@ -105,50 +105,9 @@ header {
     display: none;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 
-nav ul {
-    margin-right: 20px;
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
 label.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0 30px;
-    line-height: 50px;
-}
-
-a:hover{
-    color: white;
-  }
-
-label.checkbtn{
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-/* label.logo {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0 30px;
@@ -191,10 +150,54 @@ nav ul li a{
 
 #check {
     display: none;
-} */
+}
 
 
 @media (min-width: 576px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    nav ul {
+        margin-right: 20px;
+        float: right;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        line-height: 50px;
+        margin: 0 20px;
+    }
+    
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    label.logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0 30px;
+        line-height: 50px;
+    }
+    
+    a:hover{
+        color: white;
+      }
+    
+    label.checkbtn{
+        display: none;
+    }
+    
+    #check {
+        display: none;
+    }
+
+
     .card-list-container {
         /* display: flex;
         flex-direction: column; */
