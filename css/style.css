@@ -30,7 +30,6 @@ header {
 
 .filterbar-container {
     display: flex;
-    flex: none;
     width: 100%;
     height: 80px;
     background: rgb(207, 255, 207);
@@ -43,8 +42,8 @@ header {
 }
 
 .filterbar-header h1{
-    font-weight: 250;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .filterbar-dropdown {
