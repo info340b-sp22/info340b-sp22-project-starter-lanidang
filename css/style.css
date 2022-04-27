@@ -160,6 +160,7 @@ nav ul{
     text-align: left;
     padding-left: 50px;
     transition: all .5s ease;
+    background-color: rgb(233, 204, 233);
 }
 
 nav ul li{
@@ -173,6 +174,11 @@ nav ul li a{
     color: black;
     text-decoration: none;
 }
+
+a:hover{
+    text-decoration: underline;
+    font-weight: 500;
+  }
   
 #check:checked ~ ul{
     left: 0;
@@ -184,7 +190,7 @@ nav ul li a{
 
 
 @media (min-width: 576px) {
-    nav {
+    /* nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -207,11 +213,6 @@ nav ul li a{
         text-decoration: none;
         text-transform: uppercase;
     }
-
-    select {
-        border-radius: 20px;
-        padding: 2px 6px;
-    }
     
     label.logo {
         font-size: 1.5rem;
@@ -221,7 +222,8 @@ nav ul li a{
     }
     
     a:hover{
-        color: white;
+        text-decoration: underline;
+        font-weight: 500;
       }
     
     label.checkbtn{
@@ -230,6 +232,11 @@ nav ul li a{
     
     #check {
         display: none;
+    } */
+
+    select {
+        border-radius: 20px;
+        padding: 2px 6px;
     }
 
     button:hover {
