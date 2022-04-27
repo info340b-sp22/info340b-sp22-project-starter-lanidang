@@ -126,8 +126,6 @@ select {
     display: none;
 }
 
-
-
 label.logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -296,4 +294,11 @@ a:hover{
     }
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 992px) {
+    label.logo {
+        font-size: 2.5rem;
+    }
+    nav ul li a {
+        font-size: 2rem;
+    }
+}
