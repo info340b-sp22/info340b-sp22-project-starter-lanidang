@@ -172,6 +172,11 @@ nav ul li a{
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 a:hover{
     text-decoration: underline;
     font-weight: 500;
