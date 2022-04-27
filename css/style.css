@@ -155,6 +155,7 @@ nav ul{
     text-align: left;
     padding-left: 50px;
     transition: all .5s ease;
+    background-color: rgb(228, 183, 228);
 }
 
 nav ul li{
@@ -176,6 +177,11 @@ nav ul li a{
 #check {
     display: none;
 }
+
+a:hover{
+    text-decoration: underline;
+    font-weight: 500;
+  }
 
 
 @media (min-width: 576px) {
@@ -216,7 +222,8 @@ nav ul li a{
     }
     
     a:hover{
-        color: white;
+        text-decoration: underline;
+        font-weight: 500;
       }
     
     label.checkbtn{
