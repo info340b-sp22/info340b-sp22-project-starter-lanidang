@@ -60,7 +60,7 @@ select {
     border-radius: 10px;
 }
 
-button {
+.button {
     border: none;
     border-radius: 35px;
     background-color: white;
@@ -69,10 +69,6 @@ button {
     padding: 8px 24px;
     text-align: center;
     box-shadow: -1px 3px 10px rgba(201, 201, 201, 0.5);
-}
-
-button:active {
-    text-decoration: underline;
 }
 
 .card-list-container {
@@ -232,10 +228,6 @@ a:hover{
     
     #check {
         display: none;
-    }
-
-    button:hover {
-        transform: scale(1.1);
     }
 
     .card-list-container {
