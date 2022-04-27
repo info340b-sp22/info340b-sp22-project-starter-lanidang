@@ -177,7 +177,7 @@ a:hover{
     font-weight: 500;
   }
 
-
+/* Small Screen Media Query */
 @media (min-width: 576px) {
     nav {
         position: fixed;
@@ -294,6 +294,7 @@ a:hover{
     }
 }
 
+/* Medium Screen Media Query */
 @media (min-width: 992px) {
     label.logo {
         font-size: 2.5rem;
