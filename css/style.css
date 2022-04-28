@@ -12,7 +12,7 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgb(236, 236, 236)
 }
 
 main {
@@ -84,7 +84,7 @@ select {
 
 .card {
     background: white;
-    /* border-radius: 12px; */
+    border-radius: 12px;
     overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ label.logo {
     line-height: 50px;
 }
 
-label.checkbtn{
+label.checkbtn {
     float: right;
     line-height: 65px;
     margin-right: 20px;
@@ -157,12 +157,12 @@ nav ul li {
     margin: 50px 0;
     line-height: 30px;
 }
-  
+
 nav ul li a {
     font-size: 16px;
 }
-  
-#check:checked ~ ul {
+
+#check:checked~ul {
     left: 0;
 }
 
@@ -178,9 +178,11 @@ a {
 a:hover {
     text-decoration: underline;
     font-weight: 500;
-  }
+}
+
 
 /* Small Screen Media Query */
+
 @media (min-width: 576px) {
     nav {
         position: fixed;
@@ -188,31 +190,25 @@ a:hover {
         left: 0;
         width: 100%;
     }
-    
     nav ul {
         margin-right: 20px;
         float: right;
     }
-    
     nav ul li {
         display: inline-block;
         line-height: 50px;
         margin: 0 20px;
     }
-    
     nav ul li a {
         text-transform: uppercase;
     }
-
     select {
         border-radius: 20px;
         padding: 2px 6px;
     }
-    
-    label.checkbtn{
+    label.checkbtn {
         display: none;
     }
-
     .card-list-container {
         /* display: flex;
         flex-direction: column; */
@@ -279,7 +275,9 @@ a:hover {
     }
 }
 
+
 /* Medium Screen Media Query */
+
 @media (min-width: 992px) {
     label.logo {
         font-size: 2.5rem;
