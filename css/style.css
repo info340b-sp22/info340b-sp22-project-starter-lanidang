@@ -139,7 +139,7 @@ label.checkbtn{
     margin-right: 20px;
 }
 
-nav ul{
+nav ul {
     position: fixed;
     width: 40%;
     height: 100%;
@@ -152,19 +152,17 @@ nav ul{
     background-color: rgb(228, 183, 228);
 }
 
-nav ul li{
+nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
 }
   
-nav ul li a{
+nav ul li a {
     font-size: 16px;
-    color: black;
-    text-decoration: none;
 }
   
-#check:checked ~ ul{
+#check:checked ~ ul {
     left: 0;
 }
 
@@ -177,13 +175,25 @@ a {
     color: black;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
     font-weight: 500;
   }
 
+.menu-links {
+    display: none;
+}
+
 /* Small Screen Media Query */
 @media (min-width: 576px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .menu-links {
+        display: inline-block;
+    }
+
     nav {
         position: fixed;
         top: 0;
@@ -203,8 +213,6 @@ a:hover{
     }
     
     nav ul li a {
-        color: black;
-        text-decoration: none;
         text-transform: uppercase;
     }
 
@@ -213,23 +221,7 @@ a:hover{
         padding: 2px 6px;
     }
     
-    label.logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 0 30px;
-        line-height: 50px;
-    }
-    
-    a:hover{
-        text-decoration: underline;
-        font-weight: 500;
-      }
-    
     label.checkbtn{
-        display: none;
-    }
-    
-    #check {
         display: none;
     }
 
