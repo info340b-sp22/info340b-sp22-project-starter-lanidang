@@ -180,20 +180,8 @@ a:hover {
     font-weight: 500;
   }
 
-.menu-links {
-    display: none;
-}
-
 /* Small Screen Media Query */
 @media (min-width: 576px) {
-    .hamburger-menu {
-        display: none;
-    }
-
-    .menu-links {
-        display: inline-block;
-    }
-
     nav {
         position: fixed;
         top: 0;
