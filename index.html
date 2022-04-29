@@ -21,19 +21,31 @@
 
 <body>
     <header>
-        <nav>
-            <label class="logo flex-1">Laptop Research</label>
-            <input type="checkbox" id="checkId">
-            <label for="checkId" class="checkbtn">
-                <i class="material-icons">menu</i>
-            </label>
+        <label class="logo flex-1">Laptop Research</label>
+        <div class="toggleBox">
+            <a onclick="showMenu()">
+            <i class="material-icons menu">menu</i>
+            <i class="material-icons close">close</i>
+            </a>
+        </div>
+        <nav class="navigation">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li></li><a href="#home">Home</a></li>
                 <li><a href="#takeTest">Take Test</a></li>
                 <li><a href="#compareTool">Compare Tool</a></li>
             </ul>
         </nav>
     </header>
+
+    <script>
+        function showMenu(){
+            document.querySelector('.navigation').classList.toggle('active');
+            document.querySelector('.menu').classList.toggle('hide');
+            document.querySelector('.close').classList.toggle('show');
+
+        }
+    </script>
+
     <div>
         <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
     </div>
@@ -408,5 +420,7 @@
         </address>
         <p>&copy; 2022 Kristine Dao, Lani Dang, Jo Jo Gong, Minsuh Kim.</p>
     </footer>
+
+
 </body>
 </html>
