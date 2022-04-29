@@ -6,195 +6,216 @@
     <meta name="author" content="Kristine Dao, Lani Dang, Minsuh Kim, JoJo Gong">
     <meta name="description" content="Second page for laptop website">
     <title>Laptop Research Filtered Page</title>
-
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementsByClassName("filter-sidebar-container")[0];
+            sidebar.toggleAttribute('open')
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
+            <label class="logo flex-1"><a href="index.html">Laptop Research</a></label>
+            <input type="checkbox" id="checkId">
+            <label for="checkId" class="checkbtn">
                 <i class="material-icons">menu</i>
             </label>
-            <label class="logo"><a href="index.html">Laptop Research</a></label>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#takeTest">Take Test</a></li>
                 <li><a href="#compareTool">Compare Tool</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
+    <div>
+        <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
+    </div>
+    <sidebar class="filter-sidebar-container">
+        <div class="sidebar-title-container">
+            <div class="sidebar-title">
+                <span>Filter Conditions</span>
+            </div>
+            <div class="icon" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            </div>
+        </div>
+        <div class="filter-dropdown">
+            <label for="brand">Brand:</label>
+            <select name="brand">
+                <option value="HP">HP</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="price">Price (USD):</label>
+            <select name="price">
+                <option value="500-1000">500-1000</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="ram_size">Ram:</label>
+            <select name="ram_size">
+                <option value="16 GB GB">16GB</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="os">OS:</label>
+            <select name="os">
+                <option value="Window">Windows</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="processor_brand">Processor Brand:</label>
+            <select name="processor_brand">>
+                <option value="AMD">AMD</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="weight">Weight:</label>
+            <select name="weight">
+                <option value="ThinNlight">ThinNlight</option>
+            </select>
+        </div>
+        <div class="filter-button">
+            <button type="button" class="button">Filter</button>
+        </div>
+    </sidebar>
     <main>
-        <div class="filterbar-container">
-            <div class="filter-dropdown">
-                <label for="brand">Brand:</label>
-                <select name="brand">
-                    <option value="HP">HP</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="price">Price (USD):</label>
-                <select name="price">
-                    <option value="500-1000">500-1000</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="ram_size">Ram:</label>
-                <select name="ram_size">
-                    <option value="16 GB GB">16GB</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="os">OS:</label>
-                <select name="os">
-                    <option value="Window">Windows</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="processor_brand">Processor Brand:</label>
-                <select name="processor_brand">>
-                    <option value="AMD">AMD</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="weight">Weight:</label>
-                <select name="weight">
-                    <option value="ThinNlight">ThinNlight</option>
-                </select>
-            </div>
-            <div class="filter-button">
-                <button type="button" class="button">Filter</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/HP_Pavilion.jpg" alt="HP Pavilion Laptop">
-            <div class="card-content">
-                <div class="card-main-content">
-                    <h2 class="card-title">HP Pavilion</h2>
-                    <p class="card-price">$675.00</p>
-                    <div class="card-extrainfo-container">
-                        <div class="info-item">
-                            <div class="info-name">RAM</div>
-                            <div class="info-value">16GB</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">OS</div>
-                            <div class="info-value">Windows</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Weight</div>
-                            <div class="info-value">ThinNlight</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Processor</div>
-                            <div class="info-value">Ryzen 5</div>
+        <div class="card-list-container">
+            <div class="card">
+                <img src="img/HP_Pavilion.jpg" alt="HP Pavilion Laptop">
+                <div class="card-content">
+                    <div class="card-main-content">
+                        <h2 class="card-title">HP Pavilion</h2>
+                        <p class="card-price">$675.00</p>
+                        <div class="card-extrainfo-container">
+                            <div class="info-item">
+                                <div class="info-name">RAM</div>
+                                <div class="info-value">16GB</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">OS</div>
+                                <div class="info-value">Windows</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Weight</div>
+                                <div class="info-value">ThinNlight</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Processor</div>
+                                <div class="info-value">Ryzen 5</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-content-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/HP_Pavilion_2.jpg" alt="HP Pavilion Laptop 2">
-            <div class="card-content">
-                <div class="card-main-content">
-                    <h2 class="card-title">HP Pavilion</h2>
-                    <p class="card-price">$599.99</p>
-                    <div class="card-extrainfo-container">
-                        <div class="info-item">
-                            <div class="info-name">RAM</div>
-                            <div class="info-value">16GB</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">OS</div>
-                            <div class="info-value">Windows</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Weight</div>
-                            <div class="info-value">ThinNlight</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Processor</div>
-                            <div class="info-value">Ryzen 5</div>
-                        </div>
+                    <div class="card-content-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                     </div>
                 </div>
-                <div class="card-content-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="img/HP_Ryzen_7.jpg" alt="HP Ryzen 7 Laptop">
-            <div class="card-content">
-                <div class="card-main-content">
-                    <h2 class="card-title">HP Model</h2>
-                    <p class="card-price">$929.90</p>
-                    <div class="card-extrainfo-container">
-                        <div class="info-item">
-                            <div class="info-name">RAM</div>
-                            <div class="info-value">16GB</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">OS</div>
-                            <div class="info-value">Windows</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Weight</div>
-                            <div class="info-value">ThinNlight</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Processor</div>
-                            <div class="info-value">Ryzen 7</div>
+            <div class="card">
+                <img src="img/HP_Pavilion_2.jpg" alt="HP Pavilion Laptop 2">
+                <div class="card-content">
+                    <div class="card-main-content">
+                        <h2 class="card-title">HP Pavilion</h2>
+                        <p class="card-price">$599.99</p>
+                        <div class="card-extrainfo-container">
+                            <div class="info-item">
+                                <div class="info-name">RAM</div>
+                                <div class="info-value">16GB</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">OS</div>
+                                <div class="info-value">Windows</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Weight</div>
+                                <div class="info-value">ThinNlight</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Processor</div>
+                                <div class="info-value">Ryzen 5</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-content-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/HP_Pavilion_Ryzen_7.jpg" alt="HP Pavilion Ryzen 7 Laptop">
-            <div class="card-content">
-                <div class="card-main-content">
-                    <h2 class="card-title">HP Pavilion</h2>
-                    <p class="card-price">$841.90</p>
-                    <div class="card-extrainfo-container">
-                        <div class="info-item">
-                            <div class="info-name">RAM</div>
-                            <div class="info-value">16GB</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">OS</div>
-                            <div class="info-value">Windows</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Weight</div>
-                            <div class="info-value">ThinNlight</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-name">Processor</div>
-                            <div class="info-value">Ryzen 7</div>
-                        </div>
+                    <div class="card-content-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
                     </div>
                 </div>
-                <div class="card-content-left">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+            </div>
+            <div class="card">
+                <img src="img/HP_Ryzen_7.jpg" alt="HP Ryzen 7 Laptop">
+                <div class="card-content">
+                    <div class="card-main-content">
+                        <h2 class="card-title">HP Model</h2>
+                        <p class="card-price">$929.90</p>
+                        <div class="card-extrainfo-container">
+                            <div class="info-item">
+                                <div class="info-name">RAM</div>
+                                <div class="info-value">16GB</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">OS</div>
+                                <div class="info-value">Windows</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Weight</div>
+                                <div class="info-value">ThinNlight</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Processor</div>
+                                <div class="info-value">Ryzen 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/HP_Pavilion_Ryzen_7.jpg" alt="HP Pavilion Ryzen 7 Laptop">
+                <div class="card-content">
+                    <div class="card-main-content">
+                        <h2 class="card-title">HP Pavilion</h2>
+                        <p class="card-price">$841.90</p>
+                        <div class="card-extrainfo-container">
+                            <div class="info-item">
+                                <div class="info-name">RAM</div>
+                                <div class="info-value">16GB</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">OS</div>
+                                <div class="info-value">Windows</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Weight</div>
+                                <div class="info-value">ThinNlight</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-name">Processor</div>
+                                <div class="info-value">Ryzen 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,7 +224,10 @@
     <!-- Author Info -->
     <footer>
         <address>
-        Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, <a href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or <a href="mailto:msk812@uw.edu">msk812@uw.edu</a>.
+            Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, 
+            <a href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, 
+            <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or 
+            <a href="mailto:msk812@uw.edu">msk812@uw.edu</a>.
         </address>
         <p>&copy; 2022 Kristine Dao, Lani Dang, Jojo Gong, Minsuh Kim.</p>
     </footer>
