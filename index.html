@@ -11,16 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementsByClassName("filter-sidebar-container")[0];
+            sidebar.toggleAttribute('open')
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
+            <label class="logo flex-1">Laptop Research</label>
+            <input type="checkbox" id="checkId">
+            <label for="checkId" class="checkbtn">
                 <i class="material-icons">menu</i>
             </label>
-            <label class="logo">Laptop Research</label>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#takeTest">Take Test</a></li>
@@ -28,98 +34,109 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="filterbar-container">
-            <div class="filter-dropdown">
-                <label for="brand">Brand:</label>
-                <select name="brand">
-                    <option value="Select">Select</option>
-                    <option value="Lenovo">Lenovo</option>
-                    <option value="Avita">Avita</option>
-                    <option value="HP">HP</option>
-                    <option value="acer">acer</option>
-                    <option value="ASUS">ASUS</option>
-                    <option value="DELL">DELL</option>
-                    <option value="RedmiBook">RedmiBook</option>
-                    <option value="realme">realme</option>
-                    <option value="Infinix">Infinix</option>
-                    <option value="MSI">MSI</option>
-                    <option value="MICROSOFT">Microsoft</option>
-                    <option value="Smartron">Smartron</option>
-                    <option value="LG">LG</option>
-                    <option value="Nokia">Nokia</option>
-                    <option value="APPLE">Apple</option>
-                    <option value="Vaio">Vaio</option>
-                    <option value="Mi">Mi</option>
-                    <option value="ALIENWARE">ALIENWARE</option>
-                    <option value="iball">iball</option>
-                    <option value="SAMSUNG">SAMSUNG</option>
-                </select>
+    <div>
+        <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
+    </div>
+    <sidebar class="filter-sidebar-container">
+        <div class="sidebar-title-container">
+            <div class="sidebar-title">
+                <span>Filter Conditions</span>
             </div>
-            <div class="filter-dropdown">
-                <label for="price">Price (USD):</label>
-                <select name="price">
-                    <option value="Select">Select</option>
-                    <option value="&lt;500">&lt;500</option>
-                    <option value="500-1000">500-1000</option>
-                    <option value="1000-1500">1000-1500</option>
-                    <option value="1500-2000">1500-2000</option>
-                    <option value="2000-2500">2000-2500</option>
-                    <option value="2500-3000">2500-3000</option>
-                    <option value="3000-3500">3000-3500</option>
-                    <option value="3500-4000">3500-4000</option>
-                    <option value="&gt;4000">&gt;4000</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="ram_size">Ram:</label>
-                <select name="ram_size">
-                    <option value="Select">Select</option>
-                    <option value="4 GB GB">4GB</option>
-                    <option value="8 GB GB">8GB</option>
-                    <option value="16 GB GB">16GB</option>
-                    <option value="32 GB GB">32GB</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="os">OS:</label>
-                <select name="os">
-                    <option value="Select">Select</option>
-                    <option value="Window">Windows</option>
-                    <option value="DOS">DOS</option>
-                    <option value="Mac">Mac</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="processor_brand">Processor Brand:</label>
-                <select name="processor_brand">
-                    <option value="Select">Select</option>
-                    <option value="AMD">AMD</option>
-                    <option value="Intel">Intel</option>
-                    <option value="M1">M1</option>
-                    <option value="MediaTek">MediaTek</option>
-                    <option value="Qualcomm">Qualcomm</option>
-                </select>
-            </div>
-            <div class="filter-dropdown">
-                <label for="weight">Weight:</label>
-                <select name="weight">
-                    <option value="Select">Select</option>
-                    <option value="ThinNlight">ThinNlight</option>
-                    <option value="Casual">Casual</option>
-                    <option value="Gaming">Gaming</option>
-                </select>
-            </div>
-            <div class="filter-button">
-                <a class="button" href="about.html">Filter</a>
+            <div class="icon" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
             </div>
         </div>
+        <div class="filter-dropdown">
+            <label for="brand">Brand:</label>
+            <select name="brand">
+                <option value="Select">Select</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Avita">Avita</option>
+                <option value="HP">HP</option>
+                <option value="acer">acer</option>
+                <option value="ASUS">ASUS</option>
+                <option value="DELL">DELL</option>
+                <option value="RedmiBook">RedmiBook</option>
+                <option value="realme">realme</option>
+                <option value="Infinix">Infinix</option>
+                <option value="MSI">MSI</option>
+                <option value="MICROSOFT">Microsoft</option>
+                <option value="Smartron">Smartron</option>
+                <option value="LG">LG</option>
+                <option value="Nokia">Nokia</option>
+                <option value="APPLE">Apple</option>
+                <option value="Vaio">Vaio</option>
+                <option value="Mi">Mi</option>
+                <option value="ALIENWARE">ALIENWARE</option>
+                <option value="iball">iball</option>
+                <option value="SAMSUNG">SAMSUNG</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="price">Price (USD):</label>
+            <select name="price">
+                <option value="Select">Select</option>
+                <option value="&lt;500">&lt;500</option>
+                <option value="500-1000">500-1000</option>
+                <option value="1000-1500">1000-1500</option>
+                <option value="1500-2000">1500-2000</option>
+                <option value="2000-2500">2000-2500</option>
+                <option value="2500-3000">2500-3000</option>
+                <option value="3000-3500">3000-3500</option>
+                <option value="3500-4000">3500-4000</option>
+                <option value="&gt;4000">&gt;4000</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="ram_size">Ram:</label>
+            <select name="ram_size">
+                <option value="Select">Select</option>
+                <option value="4 GB GB">4GB</option>
+                <option value="8 GB GB">8GB</option>
+                <option value="16 GB GB">16GB</option>
+                <option value="32 GB GB">32GB</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="os">OS:</label>
+            <select name="os">
+                <option value="Select">Select</option>
+                <option value="Window">Windows</option>
+                <option value="DOS">DOS</option>
+                <option value="Mac">Mac</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="processor_brand">Processor Brand:</label>
+            <select name="processor_brand">
+                <option value="Select">Select</option>
+                <option value="AMD">AMD</option>
+                <option value="Intel">Intel</option>
+                <option value="M1">M1</option>
+                <option value="MediaTek">MediaTek</option>
+                <option value="Qualcomm">Qualcomm</option>
+            </select>
+        </div>
+        <div class="filter-dropdown">
+            <label for="weight">Weight:</label>
+            <select name="weight">
+                <option value="Select">Select</option>
+                <option value="ThinNlight">ThinNlight</option>
+                <option value="Casual">Casual</option>
+                <option value="Gaming">Gaming</option>
+            </select>
+        </div>
+        <a class="filter-button" href="about.html">Filter</a>
+    </sidebar>
+    <main>
         <div class="card-list-container">
             <div class="card">
                 <img src="img/samsung.jpeg" alt="Samsung Galaxy Laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">Samsung Galaxy</h2>
+                        <span class="card-title">Samsung Galaxy</span>
                         <p class="card-price">$389.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -142,8 +159,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -151,7 +169,7 @@
                 <img src="img/2691650495615_.pic.jpg" alt="Lenovo A6-9225 laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">Lenovo A6-9225</h2>
+                        <span class="card-title">Lenovo A6-9225</span>
                         <p class="card-price">$249.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -174,8 +192,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -183,7 +202,7 @@
                 <img src="img/Avita.webp" alt="Avita Pura laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">Avita Pura</h2>
+                        <span class="card-title">Avita Pura</span>
                         <p class="card-price">$195.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -206,8 +225,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -215,7 +235,7 @@
                 <img src="img/HP.jpeg" alt="HP APU laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">HP APU</h2>
+                        <span class="card-title">HP APU</span>
                         <p class="card-price">$209.00</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -238,8 +258,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -247,7 +268,7 @@
                 <img src="img/acer.jpeg" alt="Acer Aspire laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">acer Aspire</h2>
+                        <span class="card-title">acer Aspire</span>
                         <p class="card-price">$319.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -270,8 +291,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -279,7 +301,7 @@
                 <img src="img/dell.jpeg" alt="DELL Vostro laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">DELL Vostro</h2>
+                        <span class="card-title">DELL Vostro</span>
                         <p class="card-price">$394.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -302,8 +324,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -311,7 +334,7 @@
                 <img src="img/mac.jpeg" alt="Appple MacBook">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">APPLE MacBook</h2>
+                        <span class="card-title">APPLE MacBook</span>
                         <p class="card-price">$1599.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -334,8 +357,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -343,7 +367,7 @@
                 <img src="img/redmi.jpeg" alt="RedmiBook 15 laptop">
                 <div class="card-content">
                     <div class="card-main-content">
-                        <h2 class="card-title">RedmiBook 15</h2>
+                        <span class="card-title">RedmiBook 15</span>
                         <p class="card-price">$429.90</p>
                         <div class="card-extrainfo-container">
                             <div class="info-item">
@@ -366,8 +390,9 @@
                     </div>
                     <div class="card-content-left">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                     </div>
                 </div>
 
@@ -379,9 +404,11 @@
     <!-- Author Info -->
     <footer>
         <address>
-        Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, <a href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or <a href="mailto:msk812@uw.edu">msk812@uw.edu</a>.
+            Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, <a
+                href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or <a
+                href="mailto:msk812@uw.edu">msk812@uw.edu</a>.
         </address>
-        <p>&copy; 2022 Kristine Dao, Lani Dang, Jojo Gong, Minsuh Kim.</p>
+        <p>&copy; 2022 Kristine Dao, Lani Dang, Jo Jo Gong, Minsuh Kim.</p>
     </footer>
 </body>
 

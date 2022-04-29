@@ -7,6 +7,31 @@
     font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+:root {
+    --nav-height: 50px;
+    --px-page: 18px;
+}
+
+
+/* -----Utils----- */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+/* @import url('./sidebar.css'); */
+
 body {
     height: 100vh;
     width: 100vw;
@@ -22,32 +47,80 @@ main {
     flex-direction: column;
 }
 
-header {
-    flex: none;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(199, 114, 199);
-}
-
 footer {
     flex: none;
     width: 100%;
     height: 60px;
-    background-color: rgb(199, 114, 199);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
 }
 
 .filterbar-container {
     display: flex;
     width: 100%;
-    height: 80px;
-    background: rgb(207, 255, 207);
+    /* height: 80px; */
+    background: rgb(255, 255, 255);
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
     flex-basis: auto;
     gap: 12px;
     align-items: center;
+}
+
+.filter-sidebar-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    /* right: 0; */
+    width: 100%;
+    background: rgb(232, 236, 238);
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transition: all 600ms ease;
+}
+
+.filter-sidebar-container[open] {
+    left: 0;
+}
+
+.filter-sidebar-container:not([open]) {
+    left: 100%;
+}
+
+.filter-dropdown,
+.filter-button {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 6px;
+}
+
+.filter-dropdown>select {
+    flex: 1;
+    border: none;
+    padding: 8px;
+}
+
+.sidebar-title-container {
+    top: 22px;
+    right: 22px;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-title-container span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(54, 54, 54);
 }
 
 select {
@@ -60,19 +133,24 @@ select {
     border-radius: 10px;
 }
 
-.button {
+.filter-button {
+    display: block;
+    margin-top: 16px;
     border: none;
     border-radius: 35px;
     background-color: white;
     color: black;
-    font-size: 12px;
+    font-size: 1rem;
     padding: 8px 24px;
     text-align: center;
     box-shadow: -1px 3px 10px rgba(201, 201, 201, 0.5);
 }
 
+
+/* -----Card----- */
+
 .card-list-container {
-    padding: 18px;
+    padding: var(--px-page);
     flex: 1;
     height: 100%;
     width: 100%;
@@ -83,6 +161,7 @@ select {
 }
 
 .card {
+    padding: 8px;
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -106,11 +185,18 @@ select {
 
 .card-content-left {
     flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 28px;
 }
 
 .card-title {
     font-size: 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-price {
@@ -126,20 +212,10 @@ select {
     display: none;
 }
 
-label.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0 30px;
-    line-height: 50px;
-}
 
-label.checkbtn {
-    float: right;
-    line-height: 65px;
-    margin-right: 20px;
-}
+/* -------Nav------ */
 
-nav ul {
+ul {
     position: fixed;
     width: 40%;
     height: 100%;
@@ -152,9 +228,22 @@ nav ul {
     background-color: rgb(228, 183, 228);
 }
 
+header {
+    flex: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header nav {
+    height: var(--nav-height);
+    padding: 0 var(--px-page);
+    display: flex;
+    align-items: center;
+}
+
 nav ul li {
     display: block;
-    margin: 50px 0;
+    margin: 40px 0;
     line-height: 30px;
 }
 
@@ -162,11 +251,11 @@ nav ul li a {
     font-size: 16px;
 }
 
-#check:checked~ul {
+#checkId:checked~ul {
     left: 0;
 }
 
-#check {
+#checkId {
     display: none;
 }
 
@@ -180,16 +269,30 @@ a:hover {
     font-weight: 500;
 }
 
+label.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+/* -----Filter Button----- */
+
+.filter-btn {
+    margin-top: var(--px-page);
+    margin-left: var(--px-page);
+    margin-right: var(--px-page);
+    padding: 12px;
+    border-radius: 18px;
+    background: rgb(186, 209, 226);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 
 /* Small Screen Media Query */
 
 @media (min-width: 576px) {
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
     nav ul {
         margin-right: 20px;
         float: right;
@@ -219,7 +322,7 @@ a:hover {
     }
     .card {
         margin: 12px;
-        padding: 8px;
+        padding: 12px;
         height: 150px;
         display: flex;
         border-radius: 16px;
