@@ -216,59 +216,6 @@ select {
 
 /* -------Nav------ */
 
-/* ul {
-    position: fixed;
-    width: 40%;
-    height: 100%;
-    top: 0;
-    background: white;
-    left: -40%;
-    text-align: left;
-    padding-left: 50px;
-    transition: all .5s ease;
-    display: none;
-    background-color: rgb(186, 209, 226);
-}
-
-header {
-    flex: none;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-header nav {
-    height: var(--nav-height);
-    padding: 0 var(--px-page);
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    display: block;
-    margin: 40px 0;
-    line-height: 30px;
-}
-
-nav ul li a {
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration: underline;
-    font-weight: 500;
-}
-
-label.logo {
-    font-size: 1.4rem;
-    font-weight: bold;
-} */
-
-
 
 header {
     padding: 20px;
@@ -295,7 +242,6 @@ nav.navigation.active {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* tutorial is absolute but I'm experimenting with fixed*/
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -358,23 +304,6 @@ nav.navigation.active a {
 /* Small Screen Media Query */
 
 @media (min-width: 576px) {
-    /* ul {
-        display: inline-block;
-    }
-
-    nav ul {
-        margin-right: 20px;
-        float: right;
-    }
-    nav ul li {
-        display: inline-block;
-        line-height: 50px;
-        margin: 0 20px;
-    }
-    nav ul li a {
-        text-transform: uppercase;
-    } */
-
 
     nav.navigation {
         display: flex;
