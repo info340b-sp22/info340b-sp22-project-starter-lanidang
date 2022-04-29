@@ -225,7 +225,7 @@ ul {
     text-align: left;
     padding-left: 50px;
     transition: all .5s ease;
-    background-color: rgb(228, 183, 228);
+    background-color: rgb(186, 209, 226);
 }
 
 header {
@@ -312,6 +312,7 @@ label.logo {
     label.checkbtn {
         display: none;
     }
+    
     .card-list-container {
         /* display: flex;
         flex-direction: column; */
