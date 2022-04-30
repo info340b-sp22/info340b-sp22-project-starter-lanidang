@@ -24,8 +24,8 @@
         <label class="logo flex-1">Laptop Research</label>
         <div>
             <a onclick="showMenu()">
-            <i class="material-icons menu">menu</i>
-            <i class="material-icons close">close</i>
+                <i class="material-icons menu">menu</i>
+                <i class="material-icons close">close</i>
             </a>
         </div>
         <nav class="navigation">
@@ -38,7 +38,7 @@
     </header>
 
     <script>
-        function showMenu(){
+        function showMenu() {
             document.querySelector('.navigation').classList.toggle('active');
             document.querySelector('.menu').classList.toggle('hide');
             document.querySelector('.close').classList.toggle('show');
@@ -46,9 +46,6 @@
         }
     </script>
 
-    <div>
-        <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
-    </div>
     <sidebar class="filter-sidebar-container">
         <div class="sidebar-title-container">
             <div class="sidebar-title">
@@ -60,9 +57,11 @@
             </svg>
             </div>
         </div>
-        <div class="filter-dropdown">
-            <label for="brand">Brand:</label>
-            <select name="brand">
+        <form action="./filtered.html" method="GET">
+            <div class="filter-dropdown">
+
+                <label for="brand">Brand:</label>
+                <select name="brand">
                 <option value="Select">Select</option>
                 <option value="Lenovo">Lenovo</option>
                 <option value="Avita">Avita</option>
@@ -85,10 +84,10 @@
                 <option value="iball">iball</option>
                 <option value="SAMSUNG">SAMSUNG</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="price">Price (USD):</label>
-            <select name="price">
+            </div>
+            <div class="filter-dropdown">
+                <label for="price">Price (USD):</label>
+                <select name="price">
                 <option value="Select">Select</option>
                 <option value="&lt;500">&lt;500</option>
                 <option value="500-1000">500-1000</option>
@@ -100,29 +99,29 @@
                 <option value="3500-4000">3500-4000</option>
                 <option value="&gt;4000">&gt;4000</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="ram_size">Ram:</label>
-            <select name="ram_size">
+            </div>
+            <div class="filter-dropdown">
+                <label for="ram_size">Ram:</label>
+                <select name="ram_size">
                 <option value="Select">Select</option>
                 <option value="4 GB GB">4GB</option>
                 <option value="8 GB GB">8GB</option>
                 <option value="16 GB GB">16GB</option>
                 <option value="32 GB GB">32GB</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="os">OS:</label>
-            <select name="os">
+            </div>
+            <div class="filter-dropdown">
+                <label for="os">OS:</label>
+                <select name="os">
                 <option value="Select">Select</option>
                 <option value="Window">Windows</option>
                 <option value="DOS">DOS</option>
                 <option value="Mac">Mac</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="processor_brand">Processor Brand:</label>
-            <select name="processor_brand">
+            </div>
+            <div class="filter-dropdown">
+                <label for="processor_brand">Processor Brand:</label>
+                <select name="processor_brand">
                 <option value="Select">Select</option>
                 <option value="AMD">AMD</option>
                 <option value="Intel">Intel</option>
@@ -130,19 +129,24 @@
                 <option value="MediaTek">MediaTek</option>
                 <option value="Qualcomm">Qualcomm</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="weight">Weight:</label>
-            <select name="weight">
+            </div>
+            <div class="filter-dropdown">
+                <label for="weight">Weight:</label>
+                <select name="weight">
                 <option value="Select">Select</option>
                 <option value="ThinNlight">ThinNlight</option>
                 <option value="Casual">Casual</option>
                 <option value="Gaming">Gaming</option>
             </select>
-        </div>
-        <a class="filter-button" href="about.html">Filter</a>
+            </div>
+            <button type="submit" class="filter-button">Filter</button>
+
+        </form>
     </sidebar>
     <main>
+        <div>
+            <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
+        </div>
         <div class="card-list-container">
             <div class="card">
                 <img src="img/samsung.jpeg" alt="Samsung Galaxy Laptop">
@@ -423,4 +427,5 @@
 
 
 </body>
+
 </html>
