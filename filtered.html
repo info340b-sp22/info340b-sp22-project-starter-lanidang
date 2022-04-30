@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="author" content="Kristine Dao, Lani Dang, Minsuh Kim, JoJo Gong">
-    <meta name="description" content="Second page for laptop website">
-    <title>Laptop Research Filtered Page</title>
+    <meta name="description" content="First page for laptop website">
+    <title>Laptop Research Main Page</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script>
         function toggleSidebar() {
             let sidebar = document.getElementsByClassName("filter-sidebar-container")[0];
@@ -21,11 +21,11 @@
 
 <body>
     <header>
-        <label class="logo flex-1"><a href="index.html">Laptop Research</a></label>
+        <a class="logo flex-1" href="./index.html">Laptop Research</a>
         <div>
             <a onclick="showMenu()">
-            <i class="material-icons menu">menu</i>
-            <i class="material-icons close">close</i>
+                <i class="material-icons menu">menu</i>
+                <i class="material-icons close">close</i>
             </a>
         </div>
         <nav class="navigation">
@@ -37,19 +37,15 @@
         </nav>
     </header>
 
-
     <script>
-        function showMenu(){
+        function showMenu() {
             document.querySelector('.navigation').classList.toggle('active');
             document.querySelector('.menu').classList.toggle('hide');
             document.querySelector('.close').classList.toggle('show');
 
         }
     </script>
-    
-    <div>
-        <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
-    </div>
+
     <sidebar class="filter-sidebar-container">
         <div class="sidebar-title-container">
             <div class="sidebar-title">
@@ -61,46 +57,98 @@
             </svg>
             </div>
         </div>
-        <div class="filter-dropdown">
-            <label for="brand">Brand:</label>
-            <select name="brand">
+        <form action="./filtered.html" method="GET">
+            <div class="filter-dropdown">
+
+                <label for="brand">Brand:</label>
+                <select name="brand">
+                <option value="Select">Select</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Avita">Avita</option>
                 <option value="HP">HP</option>
+                <option value="acer">acer</option>
+                <option value="ASUS">ASUS</option>
+                <option value="DELL">DELL</option>
+                <option value="RedmiBook">RedmiBook</option>
+                <option value="realme">realme</option>
+                <option value="Infinix">Infinix</option>
+                <option value="MSI">MSI</option>
+                <option value="MICROSOFT">Microsoft</option>
+                <option value="Smartron">Smartron</option>
+                <option value="LG">LG</option>
+                <option value="Nokia">Nokia</option>
+                <option value="APPLE">Apple</option>
+                <option value="Vaio">Vaio</option>
+                <option value="Mi">Mi</option>
+                <option value="ALIENWARE">ALIENWARE</option>
+                <option value="iball">iball</option>
+                <option value="SAMSUNG">SAMSUNG</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="price">Price (USD):</label>
-            <select name="price">
+            </div>
+            <div class="filter-dropdown">
+                <label for="price">Price (USD):</label>
+                <select name="price">
+                <option value="Select">Select</option>
+                <option value="&lt;500">&lt;500</option>
                 <option value="500-1000">500-1000</option>
+                <option value="1000-1500">1000-1500</option>
+                <option value="1500-2000">1500-2000</option>
+                <option value="2000-2500">2000-2500</option>
+                <option value="2500-3000">2500-3000</option>
+                <option value="3000-3500">3000-3500</option>
+                <option value="3500-4000">3500-4000</option>
+                <option value="&gt;4000">&gt;4000</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="ram_size">Ram:</label>
-            <select name="ram_size">
+            </div>
+            <div class="filter-dropdown">
+                <label for="ram_size">Ram:</label>
+                <select name="ram_size">
+                <option value="Select">Select</option>
+                <option value="4 GB GB">4GB</option>
+                <option value="8 GB GB">8GB</option>
                 <option value="16 GB GB">16GB</option>
+                <option value="32 GB GB">32GB</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="os">OS:</label>
-            <select name="os">
+            </div>
+            <div class="filter-dropdown">
+                <label for="os">OS:</label>
+                <select name="os">
+                <option value="Select">Select</option>
                 <option value="Window">Windows</option>
+                <option value="DOS">DOS</option>
+                <option value="Mac">Mac</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="processor_brand">Processor Brand:</label>
-            <select name="processor_brand">>
+            </div>
+            <div class="filter-dropdown">
+                <label for="processor_brand">Processor Brand:</label>
+                <select name="processor_brand">
+                <option value="Select">Select</option>
                 <option value="AMD">AMD</option>
+                <option value="Intel">Intel</option>
+                <option value="M1">M1</option>
+                <option value="MediaTek">MediaTek</option>
+                <option value="Qualcomm">Qualcomm</option>
             </select>
-        </div>
-        <div class="filter-dropdown">
-            <label for="weight">Weight:</label>
-            <select name="weight">
+            </div>
+            <div class="filter-dropdown">
+                <label for="weight">Weight:</label>
+                <select name="weight">
+                <option value="Select">Select</option>
                 <option value="ThinNlight">ThinNlight</option>
+                <option value="Casual">Casual</option>
+                <option value="Gaming">Gaming</option>
             </select>
-        </div>
-        <button type="submit" class="filter-button">Filter</button>
+            </div>
+            <button type="submit" class="filter-button">Filter</button>
+
+        </form>
     </sidebar>
     <main>
+        <div>
+            <div class="filter-btn" onclick="toggleSidebar()">Filter</div>
+        </div>
         <div class="card-list-container">
+
             <div class="card">
                 <img src="img/HP_Pavilion.jpg" alt="HP Pavilion Laptop">
                 <div class="card-content">
@@ -229,18 +277,23 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </main>
 
     <!-- Author Info -->
     <footer>
         <address>
-            Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, 
-            <a href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, 
-            <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or 
-            <a href="mailto:msk812@uw.edu">msk812@uw.edu</a>.
+            Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, <a
+                href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or <a
+                href="mailto:msk812@uw.edu">msk812@uw.edu</a>.
         </address>
-        <p>&copy; 2022 Kristine Dao, Lani Dang, Jojo Gong, Minsuh Kim.</p>
+        <p>&copy; 2022 Kristine Dao, Lani Dang, Jo Jo Gong, Minsuh Kim.</p>
     </footer>
+
+
 </body>
+
 </html>

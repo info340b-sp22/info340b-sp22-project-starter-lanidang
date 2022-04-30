@@ -10,6 +10,10 @@
 :root {
     --nav-height: 50px;
     --px-page: 18px;
+    --bg-body: rgb(231, 231, 231);
+    --bg-footer: rgb(202, 202, 202);
+    --bg-card: rgb(255, 255, 255);
+    --color-footer: rgb(99, 99, 99);
 }
 
 
@@ -37,7 +41,7 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(236, 236, 236)
+    background-color: var(--bg-body);
 }
 
 main {
@@ -51,10 +55,10 @@ main {
 
 footer {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-footer);
     padding: 1rem;
     flex-basis: auto;
-    color: gray;
+    color: var(--color-footer);
 }
 
 footer a {
@@ -194,7 +198,7 @@ select {
 
 .card {
     padding: 8px;
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -259,11 +263,12 @@ header {
     top: 0;
 }
 
-label.logo {
+.logo {
     font-size: 1.4rem;
     font-weight: bold;
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a,
@@ -421,7 +426,7 @@ li:hover {
 /* Medium Screen Media Query */
 
 @media (min-width: 992px) {
-    label.logo {
+    .logo {
         font-size: 1.5rem;
     }
     nav ul li a {
