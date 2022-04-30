@@ -56,6 +56,9 @@ footer {
     padding: 1rem;
 }
 
+
+/* -----Filter Bar----- */
+
 .filterbar-container {
     display: flex;
     width: 100%;
@@ -147,6 +150,28 @@ select {
     padding: 8px 24px;
     text-align: center;
     box-shadow: -1px 3px 10px rgba(201, 201, 201, 0.5);
+}
+
+.filter-button:hover {
+    transform: scale(1.01);
+    text-decoration: underline;
+}
+
+.filter-btn {
+    margin-top: var(--px-page);
+    margin-left: var(--px-page);
+    margin-right: var(--px-page);
+    padding: 12px;
+    border-radius: 18px;
+    background: rgb(186, 209, 226);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.filter-btn:hover {
+    transform: scale(1.01);
+    text-decoration: underline;
 }
 
 
@@ -297,23 +322,6 @@ li:hover {
 
 .material-icons.close.show {
     display: flex;
-}
-
-
-
-
-/* -----Filter Button----- */
-
-.filter-btn {
-    margin-top: var(--px-page);
-    margin-left: var(--px-page);
-    margin-right: var(--px-page);
-    padding: 12px;
-    border-radius: 18px;
-    background: rgb(186, 209, 226);
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
 }
 
 
