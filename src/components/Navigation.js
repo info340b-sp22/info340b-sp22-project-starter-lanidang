@@ -33,6 +33,6 @@ export function Menu() {
           </li>
         </ul>
       </nav>
-    </div>
+    </div> 
   );
 }
