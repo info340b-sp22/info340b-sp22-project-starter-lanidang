@@ -80,7 +80,7 @@
         ]
     },
     {
-        "name": "ram_size",
+        "name": "ram_gb",
         "label": "ram_size",
         "options": [
             "All",

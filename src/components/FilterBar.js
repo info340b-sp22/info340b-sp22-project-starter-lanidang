@@ -17,7 +17,7 @@ const Select = ({ options, label, name, value, onChange }) => {
     onChange(n);
   };
   return (
-    <div className="py-2 relative flex">
+    <div className="py-2 relative flex items-center">
       <label className="inline-block w-36" htmlFor={name}>
         {label}
       </label>
