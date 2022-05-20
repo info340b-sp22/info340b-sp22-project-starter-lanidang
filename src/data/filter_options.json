@@ -1,7 +1,9 @@
 [
     {
-        "label": "brand",
+        "name": "brand",
+        "label": "Brand",
         "options": [
+            "All",
             "Lenovo",
             "Avita",
             "HP",
@@ -25,22 +27,63 @@
         ]
     },
     {
-        "label": "price",
+        "name": "price",
+        "label": "Price",
         "options": [
-            "0-500",
-            "500-1000",
-            "1000-1500",
-            "1500-2000",
-            "2000-2500",
-            "2500-3000",
-            "3000-3500",
-            "3500-4000",
-            "&gt;4000"
+            {
+                "text": "All"
+            },
+            {
+                "text": "0-500",
+                "start": 0,
+                "end": 500
+            },
+            {
+                "text": "500-1000",
+                "start": 500,
+                "end": 1000
+            },
+            {
+                "text": "1000-1500",
+                "start": 1000,
+                "end": 1500
+            },
+            {
+                "text": "1500-2000",
+                "start": 1500,
+                "end": 2000
+            },
+            {
+                "text": "2000-2500",
+                "start": 2000,
+                "end": 2500
+            },
+            {
+                "text": "2500-3000",
+                "start": 2500,
+                "end": 3000
+            },
+            {
+                "text": "3000-3500",
+                "start": 3000,
+                "end": 3500
+            },
+            {
+                "text": "3500-4000",
+                "start": 3500,
+                "end": 4000
+            },
+            {
+                "text": "4000",
+                "start": 4000
+            }
         ]
     },
     {
+        "name": "ram_size",
         "label": "ram_size",
         "options": [
+            "All",
             "4 GB GB",
             "8 GB GB",
             "16 GB GB",
@@ -48,16 +91,20 @@
         ]
     },
     {
+        "name": "os",
         "label": "os",
         "options": [
-            "Window",
+            "All",
+            "Windows",
             "DOS",
             "Mac"
         ]
     },
     {
+        "name": "processor_brand",
         "label": "processor_brand",
         "options": [
+            "All",
             "AMD",
             "Intel",
             "M1",
@@ -66,8 +113,10 @@
         ]
     },
     {
-        "label": "weight",
+        "name": "weight",
+        "label": "Weight",
         "options": [
+            "All",
             "ThinNlight",
             "Casual",
             "Gaming"

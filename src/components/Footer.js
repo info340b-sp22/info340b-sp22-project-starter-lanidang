@@ -2,7 +2,7 @@ import React from 'react'
 
 export function Footer() {
   return (
-    <footer>
+    <footer className='px-6 py-6 bg-slate-200'>
       <address>
         Contact at <a href="mailto:daokr@uw.edu">daokr@uw.edu</a>, <a
           href="mailto:lanidang@uw.edu">lanidang@uw.edu</a>, <a href="mailto:ugong@uw.edu">ugong@uw.edu</a>, or <a
