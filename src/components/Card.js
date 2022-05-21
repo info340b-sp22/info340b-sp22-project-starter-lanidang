@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlinePlusCircle } from 'react-icons/hi';
+import { Modal } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+
 
 export function Card({ imgUrl, imgAlt, title, price, infoItems }) {
+
+  const [addCard, setAddCard] = useState([]);
+  const [show, setShow] = useState(false);
+
+  const handleClick = () => {
+    console.log('Added laptop');
+    let newCard = addCard.push;
+    setAddCard({...addCard, newCard});
+    setShow(true);
+  }
+
+  const handleClose = () => {
+    console.log('Closed popup')
+    setShow(false);
+  }
+
   return (
     <div className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden">
       {/* <img className='object-cover h-52' src={"https://random.imagecdn.app/500/250"} alt={imgAlt} /> */}
@@ -19,8 +38,28 @@ export function Card({ imgUrl, imgAlt, title, price, infoItems }) {
             ))}
           </div>
         </div>
-        <div className="flex-none ">
-          <HiOutlinePlusCircle size={24} />
+        <div className="flex-none">
+          {/* <HiOutlinePlusCircle size={24} /> */}
+          <>
+          <HiOutlinePlusCircle size={24} onClick={handleClick} />
+
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                Added New Laptop
+              </Modal.Header>
+              <Modal.Body>
+                You added {title} to the compare tool.
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  Close
+                </Button>
+                <Button variant="primary" onClick={handleClose}>
+                  OK
+                </Button>
+              </Modal.Footer>
+            </Modal>
+          </>
         </div>
       </div>
     </div>
