@@ -11,8 +11,8 @@ export function Header({ navItems }) {
     setOpen(_ => false);
   }
   return (
-    <header className='px-6 h-14 flex justify-between align-center bg-slate-200'>
-      <span className='text-xl font-bold flex items-center'>Laptop Search</span>
+    <header className='px-6 h-20 flex justify-between align-center bg-slate-200'>
+      <span className='text-2xl font-bold flex items-center'>Laptop Search</span>
       <div className={(open ? ' flex justify-center items-center absolute inset-0 bg-slate-100' : ' hidden')}>
         <ul className={'md:hidden flex flex-col justify-center items-center'}>
           {navItems.map((item, index) => (
