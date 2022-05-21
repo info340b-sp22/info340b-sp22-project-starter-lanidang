@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Header } from './components/Header';
-import { CardList } from './components/Card';
-import { Footer } from './components/Footer';
-import data from './data/Cleaned_Laptop_data.json';
-import { HiOutlineX } from 'react-icons/hi';
-import { FilterBar } from './components/FilterBar';
-import filter_options from './data/filter_options.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
-=======
 import React from "react";
 import { Header } from "./components/Header";
 import { CardList } from "./components/Card";
@@ -17,7 +6,8 @@ import data from "./data/Cleaned_Laptop_data.json";
 import { HiOutlineX } from "react-icons/hi";
 import { FilterBar } from "./components/FilterBar";
 import filter_options from "./data/filter_options.json";
->>>>>>> 23265cd2249d763ee97b86b99c55735cf6abb038
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const navItems = [
   { text: "Home", href: "#home" },

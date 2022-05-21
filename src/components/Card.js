@@ -1,11 +1,16 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import { HiOutlinePlusCircle } from 'react-icons/hi';
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
-
-export function Card({ imgUrl, imgAlt, title, price, infoItems }) {
+export function Card({
+  imgUrl,
+  imgAlt,
+  brand,
+  model,
+  latest_price,
+  infoItems,
+}) {
 
   const [addCard, setAddCard] = useState([]);
   const [show, setShow] = useState(false);
@@ -22,19 +27,6 @@ export function Card({ imgUrl, imgAlt, title, price, infoItems }) {
     setShow(false);
   }
 
-=======
-import React from "react";
-import { HiOutlinePlusCircle } from "react-icons/hi";
-
-export function Card({
-  imgUrl,
-  imgAlt,
-  brand,
-  model,
-  latest_price,
-  infoItems,
-}) {
->>>>>>> 23265cd2249d763ee97b86b99c55735cf6abb038
   return (
     <div className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden">
       {/* <img className='object-cover h-52' src={"https://random.imagecdn.app/500/250"} alt={imgAlt} /> */}
@@ -69,7 +61,7 @@ export function Card({
                 Added New Laptop
               </Modal.Header>
               <Modal.Body>
-                You added {title} to the compare tool.
+                You added {brand} to the compare tool.
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
