@@ -18,6 +18,8 @@ export function Card({
   const handleClick = () => {
     console.log('Added laptop');
     let newCard = addCard.push;
+    console.log('addCard push', newCard);
+
     setAddCard({...addCard, newCard});
     setShow(true);
   }

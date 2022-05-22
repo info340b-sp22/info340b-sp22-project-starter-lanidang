@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "./components/Header";
 import { CardList } from "./components/Card";
 import { Footer } from "./components/Footer";
-import data from "./data/Cleaned_Laptop_data.json";
+// import data from "./data/Cleaned_Laptop_data.json";
 import { HiOutlineX } from "react-icons/hi";
 import { FilterBar } from "./components/FilterBar";
 import filter_options from "./data/filter_options.json";
@@ -15,7 +15,7 @@ const navItems = [
   { text: "Compare Tool", href: "#compareTool" },
 ];
 
-const cards_data = data.map((card) => ({
+const process_cards = (cards) => cards.map((card) => ({
   imgUrl:
     "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
   imgAlt: "Laptop",
@@ -26,7 +26,7 @@ const cards_data = data.map((card) => ({
     { name: "Weight", value: card.weight },
     { name: "Processor", value: card.processor_name },
   ],
-}));
+}))
 
 const default_form_values = {};
 filter_options.forEach((f) => {
@@ -36,8 +36,11 @@ filter_options.forEach((f) => {
 function App() {
   const [filterOpen, setFilterOpen] = React.useState(false);
   const [formValues, setFormValues] = React.useState(default_form_values);
+  const [isLoading, setIsLoading] = React.useState(true);
   const [cards, setCards] = React.useState([]);
   const [displayCards, setDisplayCards] = React.useState([]);
+  const [selectedCards, setSelectedCards] = React.useState([]);
+
   console.log("render app", { formValues: formValues });
   const closeFilter = () => {
     console.log("close filter");
@@ -72,7 +75,11 @@ function App() {
   };
 
   React.useEffect(() => {
-    setCards(cards_data);
+    setIsLoading(true);
+    fetch('/Cleaned_Laptop_data.json').then(res => res.json()).then(data => {
+      setCards(process_cards(data));
+      setIsLoading(false);
+    });
   }, []);
 
   React.useEffect(() => {
@@ -101,7 +108,9 @@ function App() {
         <div className="px-6 mt-4">
           <span>{displayCards.length} results found</span>
         </div>
-        {displayCards.length === 0 ? (
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : displayCards.length === 0 ? (
           <div className="py-10 flex justify-center items-center">
             <span className="text-red-600 text-3xl italic py-4 px-8 bg-red-100 rounded-xl">
               What the heck are you think you're doing
