@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
 export function CompareTool({ cards }) {
+    let key = 0;
     let card_rows = cards.map((i) => {
-        let key = i.brand + i.model;
+        key += 1;
         return <RowContent card={i} key={key}/>
     });
+
     return (
         <div>
             <h1 className="flex justify-center items-center mt-7 mb-7">Compare Tool</h1>
-            <table className="table table-bordered mr-auto ml-auto w-auto">
+            <table className="table table-bordered mr-10 ml-10 w-auto">
                 <Headers />
                 <tbody>
                     {card_rows}

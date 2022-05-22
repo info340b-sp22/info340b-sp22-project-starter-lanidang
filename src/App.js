@@ -7,7 +7,6 @@ import { HiOutlineX } from "react-icons/hi";
 import { FilterBar } from "./components/FilterBar";
 import filter_options from "./data/filter_options.json";
 import { CompareTool } from "./components/CompareTool";
-// import test_data from "./data/Test_Laptop_Data.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
