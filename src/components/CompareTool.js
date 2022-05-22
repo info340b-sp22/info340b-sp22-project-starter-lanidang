@@ -2,34 +2,42 @@ import React, { useState } from "react";
 
 export function CompareTool({ cards }) {
     let card_rows = cards.map((i) => {
-        return <RowContent card={i}/>
+        let key = i.brand + i.model;
+        return <RowContent card={i} key={key}/>
     });
     return (
-        <table>
-            <Headers />
-            {card_rows}
-        </table>
+        <div>
+            <h1 className="flex justify-center items-center mt-7 mb-7">Compare Tool</h1>
+            <table className="table table-bordered mr-auto ml-auto w-auto">
+                <Headers />
+                <tbody>
+                    {card_rows}
+                </tbody>
+            </table>
+        </div>
     )
 }
 
 function Headers() {
     return (
-        <tr>
-            <th>Brand</th>
-            <th>Model</th>
-            <th>Processor Brand</th>
-            <th>Processor Name</th>
-            <th>Ram Size</th>
-            <th>Ram Type</th>
-            <th>OS</th>
-            <th>OS Bit</th>
-            <th>Weight</th>
-            <th>Display Size</th>
-            <th>Warranty</th>
-            <th>Touchscreen</th>
-            <th>MS Office</th>
-            <th>Price</th>
-        </tr>
+        <thead className="thead-dark">
+            <tr className="table-dark">
+                <th>Brand</th>
+                <th>Model</th>
+                <th>Processor Brand</th>
+                <th>Processor Name</th>
+                <th>Ram Size</th>
+                <th>Ram Type</th>
+                <th>OS</th>
+                <th>OS Bit</th>
+                <th>Weight</th>
+                <th>Display Size</th>
+                <th>Warranty</th>
+                <th>Touchscreen</th>
+                <th>MS Office</th>
+                <th>Price</th>
+            </tr>
+        </thead>
     )
 }
 
