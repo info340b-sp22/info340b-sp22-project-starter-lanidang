@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiOutlinePlusCircle } from 'react-icons/hi';
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 export function Card({
   imgUrl,
@@ -28,6 +29,8 @@ export function Card({
     console.log('Closed popup')
     setShow(false);
   }
+
+
 
   return (
     <div className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden">
@@ -86,6 +89,7 @@ export function CardList({ cards }) {
     <div className="p-6 gap-6 w-full grid grid-cols-1 md:grid-cols-3 auto-rows-[25rem]">
       {cards.map((card, index) => (
         <Card {...card} key={index} />
+        
       ))}
     </div>
   );
