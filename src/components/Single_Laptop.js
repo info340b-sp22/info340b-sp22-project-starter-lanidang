@@ -85,8 +85,8 @@ function Single_Laptop () {
 
 
               <div className="col-md-6 col-sm-6 mb-50">
-                <h1 className="font-bold">Laptop Name</h1>
-                <h2 className="font-bold text-blue-700">$100</h2>
+                <h1 className="font-bold">{example[0].brand} {example[0].model}</h1>
+                <h2 className="font-bold text-blue-700">${example[0].latest_price}</h2>
 
                 <div className="mt-10"> 
                   <ul>
