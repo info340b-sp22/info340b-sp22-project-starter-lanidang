@@ -102,7 +102,7 @@ function Single_Laptop () {
                         Added New Laptop
                     </Modal.Header>
                     <Modal.Body>
-                        You added {example[0].brand} to the compare tool.
+                        You added {example[0].brand} {example[0].model} to the compare tool.
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>

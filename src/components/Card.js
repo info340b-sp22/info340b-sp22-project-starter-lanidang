@@ -66,7 +66,7 @@ export function Card({
                 Added New Laptop
               </Modal.Header>
               <Modal.Body>
-                You added {brand} to the compare tool.
+                You added {brand} {model} to the compare tool.
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
