@@ -1,4 +1,12 @@
 import React, { useState } from "react";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+
+const navItems = [
+    { text: "Home", href: "#home" },
+    { text: "Take Test", href: "#takeTest" },
+    { text: "Compare Tool", href: "#compareTool" },
+  ];
 
 export function CompareTool({ cards }) {
     let key = 0;
@@ -8,14 +16,26 @@ export function CompareTool({ cards }) {
     });
 
     return (
-        <div>
-            <h1 className="flex justify-center items-center mt-7 mb-7">Compare Tool</h1>
-            <table className="table table-bordered mr-10 ml-10 w-auto">
-                <Headers />
-                <tbody>
-                    {card_rows}
-                </tbody>
-            </table>
+        <div className="flex flex-col h-screen">
+            <div className="flex-1">
+                <Header navItems={navItems} />
+            </div>
+
+            <div className="container-fluid">
+
+                <div className="row">
+                    <div>
+                        <h1 className="flex justify-center items-center mt-7 mb-7">Compare Tool</h1>
+                        <table className="table table-bordered mr-10 ml-10 w-auto">
+                            <Headers />
+                            <tbody>
+                                {card_rows}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 }
