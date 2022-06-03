@@ -19,7 +19,7 @@ export const process_cards = (cards) =>
   
   cards.map((card, index) => ({
     id: index,
-    imgUrl: card.img,
+    imgUrl: card.imgUrl,
     imgAlt: "Laptop",
     price: card.latest_price / 100,
     ...card,
