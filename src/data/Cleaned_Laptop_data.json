@@ -22,7 +22,8 @@
    "discount": 23,
    "star_rating": 3.7,
    "ratings": 63,
-   "reviews": 12
+   "reviews": 12,
+   "img": "andras-vas-Bd7gNnWJBkU-unsplash"
  },
  {
    "brand": "Lenovo",
@@ -47,7 +48,8 @@
    "discount": 8,
    "star_rating": 3.6,
    "ratings": 1894,
-   "reviews": 256
+   "reviews": 256,
+   "img": "andras-vas-Bd7gNnWJBkU-unsplash"
  },
  {
    "brand": "Avita",
@@ -72,7 +74,8 @@
    "discount": 28,
    "star_rating": 3.7,
    "ratings": 1153,
-   "reviews": 159
+   "reviews": 159,
+   "img": "aryan-dhiman-iGLLtLINSkw-unsplash"
  },
  {
    "brand": "Avita",
@@ -97,7 +100,8 @@
    "discount": 23,
    "star_rating": 3.7,
    "ratings": 1153,
-   "reviews": 159
+   "reviews": 159,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -122,7 +126,8 @@
    "discount": 25,
    "star_rating": 3.7,
    "ratings": 1657,
-   "reviews": 234
+   "reviews": 234,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -147,7 +152,8 @@
    "discount": 25,
    "star_rating": 3.7,
    "ratings": 1657,
-   "reviews": 234
+   "reviews": 234,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -197,7 +203,8 @@
    "discount": 0,
    "star_rating": 3.9,
    "ratings": 219,
-   "reviews": 18
+   "reviews": 18,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -297,7 +304,8 @@
    "discount": 8,
    "star_rating": 3.8,
    "ratings": 65,
-   "reviews": 5
+   "reviews": 5,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -322,7 +330,8 @@
    "discount": 9,
    "star_rating": 3.1,
    "ratings": 8,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -472,7 +481,8 @@
    "discount": 15,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -597,7 +607,8 @@
    "discount": 25,
    "star_rating": 3.6,
    "ratings": 1120,
-   "reviews": 196
+   "reviews": 196,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -722,7 +733,8 @@
    "discount": 17,
    "star_rating": 4,
    "ratings": 286,
-   "reviews": 19
+   "reviews": 19,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -772,7 +784,8 @@
    "discount": 14,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -922,7 +935,8 @@
    "discount": 34,
    "star_rating": 4.3,
    "ratings": 2080,
-   "reviews": 235
+   "reviews": 235,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -1197,7 +1211,8 @@
    "discount": 35,
    "star_rating": 4.2,
    "ratings": 33,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -1222,7 +1237,8 @@
    "discount": 34,
    "star_rating": 4.2,
    "ratings": 286,
-   "reviews": 36
+   "reviews": 36,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -1297,7 +1313,8 @@
    "discount": 35,
    "star_rating": 4.3,
    "ratings": 543,
-   "reviews": 65
+   "reviews": 65,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -1397,7 +1414,8 @@
    "discount": 28,
    "star_rating": 4.4,
    "ratings": 299,
-   "reviews": 41
+   "reviews": 41,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -1447,7 +1465,8 @@
    "discount": 19,
    "star_rating": 4.3,
    "ratings": 758,
-   "reviews": 64
+   "reviews": 64,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -1522,7 +1541,8 @@
    "discount": 33,
    "star_rating": 5,
    "ratings": 4,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -1647,7 +1667,8 @@
    "discount": 26,
    "star_rating": 4.4,
    "ratings": 1084,
-   "reviews": 160
+   "reviews": 160,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Infinix",
@@ -1722,7 +1743,8 @@
    "discount": 24,
    "star_rating": 4.4,
    "ratings": 106,
-   "reviews": 13
+   "reviews": 13,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -1747,7 +1769,8 @@
    "discount": 24,
    "star_rating": 4.1,
    "ratings": 42,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -1772,7 +1795,8 @@
    "discount": 32,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -1797,7 +1821,8 @@
    "discount": 31,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -1922,7 +1947,8 @@
    "discount": 19,
    "star_rating": 3.9,
    "ratings": 48,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -1947,7 +1973,8 @@
    "discount": 27,
    "star_rating": 3.7,
    "ratings": 3,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -2097,7 +2124,8 @@
    "discount": 25,
    "star_rating": 4.4,
    "ratings": 529,
-   "reviews": 39
+   "reviews": 39,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -2147,7 +2175,8 @@
    "discount": 33,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -2197,7 +2226,8 @@
    "discount": 33,
    "star_rating": 4.2,
    "ratings": 10,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -2247,7 +2277,8 @@
    "discount": 15,
    "star_rating": 3.7,
    "ratings": 3,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -2372,7 +2403,8 @@
    "discount": 16,
    "star_rating": 5,
    "ratings": 1,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -2422,7 +2454,8 @@
    "discount": 12,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -2797,7 +2830,8 @@
    "discount": 37,
    "star_rating": 3.9,
    "ratings": 13,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -3022,7 +3056,8 @@
    "discount": 30,
    "star_rating": 4.5,
    "ratings": 245,
-   "reviews": 34
+   "reviews": 34,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -3272,7 +3307,8 @@
    "discount": 32,
    "star_rating": 4.4,
    "ratings": 984,
-   "reviews": 99
+   "reviews": 99,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -3622,7 +3658,8 @@
    "discount": 31,
    "star_rating": 3.4,
    "ratings": 10,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -3722,7 +3759,8 @@
    "discount": 37,
    "star_rating": 4,
    "ratings": 2124,
-   "reviews": 233
+   "reviews": 233,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -3897,7 +3935,8 @@
    "discount": 30,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -4022,7 +4061,8 @@
    "discount": 36,
    "star_rating": 3.7,
    "ratings": 103,
-   "reviews": 10
+   "reviews": 10,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -4422,7 +4462,8 @@
    "discount": 23,
    "star_rating": 3.6,
    "ratings": 7,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -5247,7 +5288,8 @@
    "discount": 19,
    "star_rating": 3.3,
    "ratings": 19,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -5272,7 +5314,8 @@
    "discount": 35,
    "star_rating": 3.7,
    "ratings": 84,
-   "reviews": 16
+   "reviews": 16,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -5297,7 +5340,8 @@
    "discount": 31,
    "star_rating": 3.4,
    "ratings": 414,
-   "reviews": 54
+   "reviews": 54,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -5322,7 +5366,8 @@
    "discount": 28,
    "star_rating": 2.8,
    "ratings": 70,
-   "reviews": 16
+   "reviews": 16,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -5572,7 +5617,8 @@
    "discount": 18,
    "star_rating": 4.2,
    "ratings": 204,
-   "reviews": 19
+   "reviews": 19,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -5597,7 +5643,8 @@
    "discount": 24,
    "star_rating": 4.2,
    "ratings": 4428,
-   "reviews": 569
+   "reviews": 569,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "MICROSOFT",
@@ -5747,7 +5794,8 @@
    "discount": 34,
    "star_rating": 4.3,
    "ratings": 365,
-   "reviews": 35
+   "reviews": 35,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "lenovo",
@@ -5772,7 +5820,8 @@
    "discount": 26,
    "star_rating": 4.6,
    "ratings": 79,
-   "reviews": 14
+   "reviews": 14,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -6072,7 +6121,8 @@
    "discount": 10,
    "star_rating": 2.8,
    "ratings": 4,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -6147,7 +6197,8 @@
    "discount": 28,
    "star_rating": 4.2,
    "ratings": 300,
-   "reviews": 24
+   "reviews": 24,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -6222,7 +6273,8 @@
    "discount": 38,
    "star_rating": 4.4,
    "ratings": 825,
-   "reviews": 95
+   "reviews": 95,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "realme",
@@ -6272,7 +6324,8 @@
    "discount": 37,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -6297,7 +6350,8 @@
    "discount": 41,
    "star_rating": 4.2,
    "ratings": 85,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -6322,7 +6376,8 @@
    "discount": 36,
    "star_rating": 4.2,
    "ratings": 56,
-   "reviews": 7
+   "reviews": 7,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "RedmiBook",
@@ -6397,7 +6452,8 @@
    "discount": 15,
    "star_rating": 4.6,
    "ratings": 17,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Nokia",
@@ -6472,7 +6528,8 @@
    "discount": 37,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -6572,7 +6629,8 @@
    "discount": 24,
    "star_rating": 4.3,
    "ratings": 126,
-   "reviews": 13
+   "reviews": 13,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -6772,7 +6830,8 @@
    "discount": 33,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -7197,7 +7256,8 @@
    "discount": 47,
    "star_rating": 4.3,
    "ratings": 37,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -7222,7 +7282,8 @@
    "discount": 32,
    "star_rating": 4.2,
    "ratings": 61,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -7447,7 +7508,8 @@
    "discount": 37,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -7597,7 +7659,8 @@
    "discount": 57,
    "star_rating": 4,
    "ratings": 48,
-   "reviews": 12
+   "reviews": 12,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -7622,7 +7685,8 @@
    "discount": 29,
    "star_rating": 4.4,
    "ratings": 282,
-   "reviews": 36
+   "reviews": 36,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -7672,7 +7736,8 @@
    "discount": 32,
    "star_rating": 4.2,
    "ratings": 67,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Infinix",
@@ -7747,7 +7812,8 @@
    "discount": 33,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -7847,7 +7913,8 @@
    "discount": 46,
    "star_rating": 4.4,
    "ratings": 46,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -7897,7 +7964,8 @@
    "discount": 17,
    "star_rating": 4.2,
    "ratings": 9,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -7922,7 +7990,8 @@
    "discount": 46,
    "star_rating": 4.4,
    "ratings": 26,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -7997,7 +8066,8 @@
    "discount": 35,
    "star_rating": 3.9,
    "ratings": 44,
-   "reviews": 6
+   "reviews": 6,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -8022,7 +8092,8 @@
    "discount": 30,
    "star_rating": 4.7,
    "ratings": 28,
-   "reviews": 6
+   "reviews": 6,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -8097,7 +8168,8 @@
    "discount": 56,
    "star_rating": 4.6,
    "ratings": 44,
-   "reviews": 8
+   "reviews": 8,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -8122,7 +8194,8 @@
    "discount": 2,
    "star_rating": 4.3,
    "ratings": 17,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -8222,7 +8295,8 @@
    "discount": 33,
    "star_rating": 4.6,
    "ratings": 10,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -8697,7 +8771,8 @@
    "discount": 0,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -8722,7 +8797,8 @@
    "discount": 14,
    "star_rating": 4.2,
    "ratings": 75,
-   "reviews": 9
+   "reviews": 9,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -8797,7 +8873,8 @@
    "discount": 37,
    "star_rating": 4.6,
    "ratings": 11,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -8822,7 +8899,8 @@
    "discount": 16,
    "star_rating": 4.4,
    "ratings": 125,
-   "reviews": 11
+   "reviews": 11,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -8972,7 +9050,8 @@
    "discount": 29,
    "star_rating": 4,
    "ratings": 21,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -8997,7 +9076,8 @@
    "discount": 29,
    "star_rating": 3.8,
    "ratings": 9,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -9172,7 +9252,8 @@
    "discount": 21,
    "star_rating": 4.3,
    "ratings": 739,
-   "reviews": 71
+   "reviews": 71,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -9297,7 +9378,8 @@
    "discount": 5,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Mi",
@@ -9447,7 +9529,8 @@
    "discount": 11,
    "star_rating": 4.8,
    "ratings": 9,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -9497,7 +9580,8 @@
    "discount": 13,
    "star_rating": 4.1,
    "ratings": 31,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -9597,7 +9681,8 @@
    "discount": 10,
    "star_rating": 4.4,
    "ratings": 45,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -9697,7 +9782,8 @@
    "discount": 11,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -9772,7 +9858,8 @@
    "discount": 5,
    "star_rating": 4.3,
    "ratings": 474,
-   "reviews": 37
+   "reviews": 37,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -9847,7 +9934,8 @@
    "discount": 37,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -9997,7 +10085,8 @@
    "discount": 27,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -10122,7 +10211,8 @@
    "discount": 29,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -10547,7 +10637,8 @@
    "discount": 25,
    "star_rating": 4.4,
    "ratings": 22,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -10572,7 +10663,8 @@
    "discount": 0,
    "star_rating": 4.6,
    "ratings": 16,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -10672,7 +10764,8 @@
    "discount": 34,
    "star_rating": 3.9,
    "ratings": 14,
-   "reviews": 6
+   "reviews": 6,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -10697,7 +10790,8 @@
    "discount": 18,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -10772,7 +10866,8 @@
    "discount": 18,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -10847,7 +10942,8 @@
    "discount": 18,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -10872,7 +10968,8 @@
    "discount": 41,
    "star_rating": 3.4,
    "ratings": 17,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -10922,7 +11019,8 @@
    "discount": 20,
    "star_rating": 4.7,
    "ratings": 3,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -10972,7 +11070,8 @@
    "discount": 5,
    "star_rating": 3.4,
    "ratings": 17,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -10997,7 +11096,8 @@
    "discount": 5,
    "star_rating": 3.4,
    "ratings": 17,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -11047,7 +11147,8 @@
    "discount": 10,
    "star_rating": 3.3,
    "ratings": 3,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -11097,7 +11198,8 @@
    "discount": 0,
    "star_rating": 3.5,
    "ratings": 8,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -11347,7 +11449,8 @@
    "discount": 46,
    "star_rating": 3,
    "ratings": 4,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -11372,7 +11475,8 @@
    "discount": 0,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -11397,7 +11501,8 @@
    "discount": 14,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -11572,7 +11677,8 @@
    "discount": 30,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -11597,7 +11703,8 @@
    "discount": 0,
    "star_rating": 3.8,
    "ratings": 78,
-   "reviews": 17
+   "reviews": 17,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -11622,7 +11729,8 @@
    "discount": 8,
    "star_rating": 4,
    "ratings": 21,
-   "reviews": 5
+   "reviews": 5,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -12297,7 +12405,8 @@
    "discount": 35,
    "star_rating": 4.3,
    "ratings": 52,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -12372,7 +12481,8 @@
    "discount": 29,
    "star_rating": 4.3,
    "ratings": 131,
-   "reviews": 17
+   "reviews": 17,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -12547,7 +12657,8 @@
    "discount": 33,
    "star_rating": 4.2,
    "ratings": 241,
-   "reviews": 19
+   "reviews": 19,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -12622,7 +12733,8 @@
    "discount": 32,
    "star_rating": 4.4,
    "ratings": 898,
-   "reviews": 128
+   "reviews": 128,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -12822,7 +12934,8 @@
    "discount": 0,
    "star_rating": 4.3,
    "ratings": 268,
-   "reviews": 25
+   "reviews": 25,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -12997,7 +13110,8 @@
    "discount": 7,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -13022,7 +13136,8 @@
    "discount": 7,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -13047,7 +13162,8 @@
    "discount": 7,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -13072,7 +13188,8 @@
    "discount": 7,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -13097,7 +13214,8 @@
    "discount": 7,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Avita",
@@ -13122,7 +13240,8 @@
    "discount": 7,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -13222,7 +13341,8 @@
    "discount": 30,
    "star_rating": 4.5,
    "ratings": 44,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Mi",
@@ -13272,7 +13392,8 @@
    "discount": 31,
    "star_rating": 4.4,
    "ratings": 77,
-   "reviews": 10
+   "reviews": 10,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -13297,7 +13418,8 @@
    "discount": 34,
    "star_rating": 4.4,
    "ratings": 11,
-   "reviews": 3
+   "reviews": 3,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Infinix",
@@ -13372,7 +13494,8 @@
    "discount": 32,
    "star_rating": 4,
    "ratings": 5,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -13447,7 +13570,8 @@
    "discount": 22,
    "star_rating": 4.5,
    "ratings": 13,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "MSI",
@@ -13647,7 +13771,8 @@
    "discount": 8,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "MSI",
@@ -13972,7 +14097,8 @@
    "discount": 0,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -13997,7 +14123,8 @@
    "discount": 9,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -14147,7 +14274,8 @@
    "discount": 0,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -14197,7 +14325,8 @@
    "discount": 0,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -14222,7 +14351,8 @@
    "discount": 21,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -14272,7 +14402,8 @@
    "discount": 1,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -14297,7 +14428,8 @@
    "discount": 20,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -14697,7 +14829,8 @@
    "discount": 26,
    "star_rating": 3,
    "ratings": 4,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -14822,7 +14955,8 @@
    "discount": 32,
    "star_rating": 4.4,
    "ratings": 7,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "MSI",
@@ -15047,7 +15181,8 @@
    "discount": 1,
    "star_rating": 4.4,
    "ratings": 16,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -15147,7 +15282,8 @@
    "discount": 15,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -15247,7 +15383,8 @@
    "discount": 18,
    "star_rating": 2.5,
    "ratings": 2,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -15322,7 +15459,8 @@
    "discount": 24,
    "star_rating": 3.9,
    "ratings": 207,
-   "reviews": 49
+   "reviews": 49,
+   "img": "img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -15347,7 +15485,8 @@
    "discount": 41,
    "star_rating": 3.4,
    "ratings": 7,
-   "reviews": 2
+   "reviews": 2,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -15422,7 +15561,8 @@
    "discount": 32,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -15897,7 +16037,8 @@
    "discount": 23,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -17472,7 +17613,8 @@
    "discount": 29,
    "star_rating": 4.4,
    "ratings": 208,
-   "reviews": 57
+   "reviews": 57,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -18072,7 +18214,8 @@
    "discount": 5,
    "star_rating": 3.3,
    "ratings": 38,
-   "reviews": 6
+   "reviews": 6,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -18422,7 +18565,8 @@
    "discount": 32,
    "star_rating": 4.5,
    "ratings": 162,
-   "reviews": 15
+   "reviews": 15,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -18447,7 +18591,8 @@
    "discount": 28,
    "star_rating": 4.4,
    "ratings": 219,
-   "reviews": 27
+   "reviews": 27,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -18572,7 +18717,8 @@
    "discount": 32,
    "star_rating": 4.2,
    "ratings": 39,
-   "reviews": 5
+   "reviews": 5,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -18622,7 +18768,8 @@
    "discount": 33,
    "star_rating": 4.5,
    "ratings": 92,
-   "reviews": 10
+   "reviews": 10,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "MSI",
@@ -18722,7 +18869,8 @@
    "discount": 35,
    "star_rating": 4.3,
    "ratings": 9,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -19222,7 +19370,8 @@
    "discount": 28,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -19297,7 +19446,8 @@
    "discount": 25,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -19447,7 +19597,8 @@
    "discount": 28,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "DELL",
@@ -19722,7 +19873,8 @@
    "discount": 3,
    "star_rating": 3.7,
    "ratings": 3,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -19947,7 +20099,8 @@
    "discount": 33,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -20047,7 +20200,8 @@
    "discount": 24,
    "star_rating": 4.5,
    "ratings": 271,
-   "reviews": 24
+   "reviews": 24,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -20122,7 +20276,8 @@
    "discount": 24,
    "star_rating": 4.5,
    "ratings": 861,
-   "reviews": 116
+   "reviews": 116,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -20372,7 +20527,8 @@
    "discount": 27,
    "star_rating": 4.6,
    "ratings": 26,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -20522,7 +20678,8 @@
    "discount": 40,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -20597,7 +20754,8 @@
    "discount": 0,
    "star_rating": 4.4,
    "ratings": 530,
-   "reviews": 69
+   "reviews": 69,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -20622,7 +20780,8 @@
    "discount": 24,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -20722,7 +20881,8 @@
    "discount": 24,
    "star_rating": 4.4,
    "ratings": 105,
-   "reviews": 10
+   "reviews": 10,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "HP",
@@ -20797,7 +20957,8 @@
    "discount": 37,
    "star_rating": 4.7,
    "ratings": 6,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "acer",
@@ -20922,7 +21083,8 @@
    "discount": 31,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -20947,7 +21109,8 @@
    "discount": 35,
    "star_rating": 3,
    "ratings": 4,
-   "reviews": 1
+   "reviews": 1,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Lenovo",
@@ -20972,7 +21135,8 @@
    "discount": 29,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -21072,7 +21236,8 @@
    "discount": 32,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "Vaio",
@@ -21422,7 +21587,8 @@
    "discount": 27,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -21497,7 +21663,8 @@
    "discount": 33,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -21697,7 +21864,8 @@
    "discount": 32,
    "star_rating": 0,
    "ratings": 0,
-   "reviews": 0
+   "reviews": 0,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  },
  {
    "brand": "ASUS",
@@ -22397,6 +22565,7 @@
    "discount": 26,
    "star_rating": 4.2,
    "ratings": 18,
-   "reviews": 4
+   "reviews": 4,
+   "img": "img/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
  }
 ]

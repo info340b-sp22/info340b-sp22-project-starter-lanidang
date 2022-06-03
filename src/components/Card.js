@@ -13,7 +13,7 @@ export function Card({
   id,
   handleClick
 }) {
-
+console.log(imgUrl);
   return (
     <div className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden" onClick={() => handleClick(id)}>
       {/* <img className='object-cover h-52' src={"https://random.imagecdn.app/500/250"} alt={imgAlt} /> */}

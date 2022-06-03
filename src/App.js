@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
@@ -7,27 +7,35 @@ import TakeTest from "./routes/TakeTest";
 import CompareTool from "./routes/CompareTool";
 import { process_cards, filter_cards } from "./util";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Alert } from "react-bootstrap";
 
 function App() {
   const pageSize = 25;
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [cards, setCards] = React.useState([]);
-  const [displayCards, setDisplayCards] = React.useState([]);
-  const [selectedCards, setSelectedCards] = React.useState([82, 122]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [cards, setCards] = useState([]);
+  const [displayCards, setDisplayCards] = useState([]);
+  const [selectedCards, setSelectedCards] = useState([82, 122]);
+  const [alertMessage, setAlertMessage] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     console.log("initial App render");
     window.addEventListener("scroll", handleScroll);
     setIsLoading(true);
+    setAlertMessage(null);
+
     fetch("/Cleaned_Laptop_data.json")
       .then((res) => res.json())
       .then((data) => {
+        if (data.length === 0) {
+          setAlertMessage("No results listed.");
+        }
         const processed_data = process_cards(data);
         setCards(process_cards(processed_data));
         // setDisplayCards(() => filter_cards(processed_data, formValues));
         setDisplayCards(() => processed_data);
         setIsLoading(false);
-      });
+      })
+      .catch((error) => setAlertMessage(error.message));
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -71,6 +79,11 @@ function App() {
     <div className="flex flex-col h-screen">
       <div className="flex-1">
         <Header navItems={navItems} />
+
+        {alertMessage &&
+          <Alert variant="danger" dismissible onClose={() => setAlertMessage(null)}>{alertMessage}</Alert>
+        }
+
         <Routes>
           {navItems.map((item, index) => (
             <Route key={index} path={item.href} element={item.component} />
