@@ -14,7 +14,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [cards, setCards] = useState([]);
   const [displayCards, setDisplayCards] = useState([]);
-  const [selectedCards, setSelectedCards] = useState([82, 122]);
+  // const [selectedCards, setSelectedCards] = useState([82, 122]);
+  const [selectedCards, setSelectedCards] = useState([]);
   const [alertMessage, setAlertMessage] = useState(null);
 
   useEffect(() => {
@@ -48,6 +49,10 @@ function App() {
     console.log("Fetch more list items!");
   }
 
+  function handleSelect(addCard) {
+    setSelectedCards([...selectedCards, addCard]);
+  }
+
   const navItems = [
     {
       text: "Home",
@@ -57,7 +62,7 @@ function App() {
           cards={cards}
           setCards={setCards}
           selectedCards={selectedCards}
-          setSelectedCards={setSelectedCards}
+          setSelectedCards={handleSelect}
           displayCards={displayCards.slice(0, 55)}
           setDisplayCards={setDisplayCards}
           isLoading={isLoading}

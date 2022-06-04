@@ -59,14 +59,10 @@ export function CardList({ cards, setSelectedCards, selectedCards }) {
     setShow(false);
   };
 
-  const handleCardClick = (id) => {
-    setShow(true);
-  }
-
   return (
     <div className="p-6 gap-6 w-full grid grid-cols-1 md:grid-cols-3 auto-rows-[25rem]">
       {cards.map((card, index) => (
-        <Card {...card} key={index} handleClick={handleCardClick} />
+        <Card {...card} key={index} handleClick={setSelectedCards} />
       ))}
 
       <Modal show={show} onHide={handleClose}>
