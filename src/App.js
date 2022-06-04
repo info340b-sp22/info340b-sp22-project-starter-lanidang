@@ -6,6 +6,7 @@ import Home from "./routes/Home";
 import TakeTest from "./routes/TakeTest";
 import CompareTool from "./routes/CompareTool";
 import { process_cards, filter_cards } from "./util";
+import { Result } from "./routes/Result";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Alert } from "react-bootstrap";
 
@@ -93,6 +94,7 @@ function App() {
           {navItems.map((item, index) => (
             <Route key={index} path={item.href} element={item.component} />
           ))}
+          <Route path="/test_result" element={<Result />} />
         </Routes>
       </div>
       <Footer />
