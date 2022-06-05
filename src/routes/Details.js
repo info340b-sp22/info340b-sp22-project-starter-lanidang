@@ -1,18 +1,8 @@
  import React from "react";
- import { Header } from "../components/Header";
- import { Footer } from "../components/Footer";
  import 'bootstrap/dist/css/bootstrap.min.css';
  import { useState } from "react";
  import { Modal } from "react-bootstrap";
  import { Button } from "react-bootstrap";
-
-
-
- const navItems = [
-     { text: "Home", href: "#home" },
-     { text: "Take Test", href: "#takeTest" },
-     { text: "Compare Tool", href: "#compareTool" },
-   ];
 
    const example = [
      {
@@ -21,9 +11,8 @@
        "os": "Windows", "os_bit": "64-bit", "graphic_card_gb": 0, "weight": "ThinNlight", "display_size": "Missing",
        "warranty": 0, "Touchscreen": "No", "msoffice": "No", "latest_price": 24990, "old_price": 32790, "discount": 23,
        "star_rating": 3.7, "ratings": 63,"reviews": 12
-     }];
-
-
+     }
+    ];
 
  export default function Details () {
 
@@ -66,8 +55,6 @@
      console.log('Closed popup')
      setShow(false);
    }
-
-
 
      return (
          <div className="flex flex-col h-screen">

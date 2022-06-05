@@ -5,14 +5,13 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import TakeTest from "./routes/TakeTest";
 import CompareTool from "./routes/CompareTool";
-import { process_cards, filter_cards } from "./util";
+import { process_cards } from "./util";
 import { Result } from "./routes/Result";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Alert } from "react-bootstrap";
 import Details from "./routes/Details";
 
 function App() {
-  const pageSize = 25;
   const [isLoading, setIsLoading] = useState(true);
   const [cards, setCards] = useState([]);
   const [displayCards, setDisplayCards] = useState([]);
