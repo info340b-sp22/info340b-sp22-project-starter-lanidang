@@ -9,6 +9,7 @@ import { process_cards, filter_cards } from "./util";
 import { Result } from "./routes/Result";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Alert } from "react-bootstrap";
+import Details from "./routes/Details";
 
 function App() {
   const pageSize = 25;
@@ -95,6 +96,8 @@ function App() {
             <Route key={index} path={item.href} element={item.component} />
           ))}
           <Route path="/test_result" element={<Result />} />
+          <Route path="/details" element={<Details />} />
+
         </Routes>
       </div>
       <Footer />

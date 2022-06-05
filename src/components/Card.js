@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiOutlinePlusCircle } from "react-icons/hi";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { useNavigate } from 'react-router-dom';
 
 export function Card({
   imgUrl,
@@ -14,8 +15,11 @@ export function Card({
   handleClick
 }) {
 console.log(imgUrl);
+
+const navigate = useNavigate();
+
   return (
-    <div className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden" onClick={() => handleClick(id)}>
+    <div className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden" onClick={() => navigate('details')}>
       {/* <img className='object-cover h-52' src={"https://random.imagecdn.app/500/250"} alt={imgAlt} /> */}
       <img className="object-cover h-52" src={imgUrl} alt={imgAlt} />
       <div className="px-6 py-4 flex align-stretch">
