@@ -61,7 +61,8 @@ export default function TakeTest() {
         <div className="w-full flex flex-col items-stretch ml-2">
           <img
             className="object-cover h-96 mx-12"
-            src="https://unsplash.com/photos/95YRwf6CNw8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjUzMzYzNzky&force=true&w=640"
+            src="/img/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+            alt="Laptop Model Test"
           />
           {questions.map((item, i) => (
             <Question key={i} {...item} handleClick={handleClick} sValue={answers[item.id]} />
