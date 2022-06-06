@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { HiOutlinePlusCircle } from "react-icons/hi";
-import { Modal } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export function Card({
@@ -12,7 +9,6 @@ export function Card({
   latest_price,
   infoItems,
   id,
-  handleClick,
 }) {
 
   const navigate = useNavigate();
@@ -26,7 +22,6 @@ export function Card({
       className="bg-slate-100 rounded-xl flex flex-col align-stretch transition decoration-300 md:hover:bg-slate-200 md:hover:scale-105 overflow-hidden cursor-pointer"
       onClick={handleCardClick}
     >
-      {/* <img className='object-cover h-52' src={"https://random.imagecdn.app/500/250"} alt={imgAlt} /> */}
       <img className="object-cover h-52" src={imgUrl} alt={imgAlt} />
       <div className="px-6 py-4 flex align-stretch">
         <div className="flex-1">
@@ -50,41 +45,18 @@ export function Card({
             ))}
           </div>
         </div>
-        {/* <div className="flex-none">
-          <>
-            <HiOutlinePlusCircle size={24} onClick={setSelectedCards} />
-          </>
-        </div> */}
       </div>
     </div>
   );
 }
 
 export function CardList({ cards, setSelectedCards }) {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => {
-    console.log("Closed popup");
-    setShow(false);
-  };
 
   return (
     <div className="p-6 gap-6 w-full grid grid-cols-1 md:grid-cols-3 auto-rows-[25rem]">
       {cards.map((card, index) => (
         <Card {...card} key={index} handleClick={setSelectedCards} />
       ))}
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>Added New Laptop</Modal.Header>
-        <Modal.Body>
-          {/* You have added {cardData.brand} {cardData.model} to the compare tool. */}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
-            OK
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </div>
   );
 }

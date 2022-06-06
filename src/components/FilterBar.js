@@ -5,13 +5,6 @@ import filter_options from "../data/filter_options.json";
 const Select = ({ options, label, name, value, onChange }) => {
   const handleChange = (e) => {
     const n = { [name]: e.target.value };
-    const selectedItem = options.reduce((item) => {
-      if (typeof value === "string") {
-        return item === e.target.value;
-      } else {
-        return item.text === e.target.value;
-      }
-    });
     console.log("select changed", n);
     onChange(n);
   };
@@ -39,7 +32,6 @@ const Select = ({ options, label, name, value, onChange }) => {
 const RangeInput = ({
   label,
   name,
-  value,
   onChange,
   min: minValue,
   max: maxValue,
@@ -49,12 +41,6 @@ const RangeInput = ({
 
   const r1 = React.useRef();
   const r2 = React.useRef();
-
-  const handleChange = (e) => {
-    const n = { [name]: Number(e.target.value) };
-    console.log("range changed", n);
-    onChange(n);
-  };
 
   const handleR1Change = (e) => {
     setV1(e.target.value);
