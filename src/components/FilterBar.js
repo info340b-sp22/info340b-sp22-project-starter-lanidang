@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineX } from "react-icons/hi";
 import filter_options from "../data/filter_options.json";
+import { HiChevronRight } from "react-icons/hi";
 
 const Select = ({ options, label, name, value, onChange }) => {
   const handleChange = (e) => {
@@ -158,7 +159,7 @@ export const FilterBar = ({
       className={
         close
           ? "hidden"
-          : "fixed bg-slate-100 inset-y-0 right-0 w-full md:w-1/2 z-20"
+          : "fixed" + " bg-slate-100 inset-y-0 right-0 w-full md:w-1/2 z-20"
       }
     >
       <HiOutlineX

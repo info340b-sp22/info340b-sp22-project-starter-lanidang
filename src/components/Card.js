@@ -12,7 +12,7 @@ export function Card({
   latest_price,
   infoItems,
   id,
-  handleClick,
+  setSelectedCards,
 }) {
 
   const navigate = useNavigate();
@@ -60,7 +60,7 @@ export function Card({
   );
 }
 
-export function CardList({ cards, setSelectedCards }) {
+export function CardList({ cards, setSelectedCards, selectedCards }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
