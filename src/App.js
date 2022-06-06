@@ -56,7 +56,7 @@ function App() {
 
   const addToCompare = (card) => {
     setSelectedCards((old) => [...old, card]);
-  }
+  };
 
   const navItems = [
     {
@@ -80,7 +80,17 @@ function App() {
       href: "/takeTest",
       component: <TakeTest selectedCards={selectedCards} />,
     },
-    { text: "Compare Tool", href: "/compareTool", component: <CompareTool selectedCards={selectedCards} cards={cards} setSelectedCards={setSelectedCards} /> },
+    {
+      text: "Compare Tool",
+      href: "/compareTool",
+      component: (
+        <CompareTool
+          selectedCards={selectedCards}
+          cards={cards}
+          setSelectedCards={setSelectedCards}
+        />
+      ),
+    },
   ];
 
   console.log("render App", { cards });
@@ -88,20 +98,30 @@ function App() {
   return (
     <div className="flex flex-col h-screen">
       <div className="flex-1 flex flex-col">
-        <Header navItems={navItems} />
+        <div className="h-full result-container">
+          <Header navItems={navItems} />
 
-        {alertMessage &&
-          <Alert variant="danger" dismissible onClose={() => setAlertMessage(null)}>{alertMessage}</Alert>
-        }
+          {alertMessage && (
+            <Alert
+              variant="danger"
+              dismissible
+              onClose={() => setAlertMessage(null)}
+            >
+              {alertMessage}
+            </Alert>
+          )}
 
-        <Routes>
-          {navItems.map((item, index) => (
-            <Route key={index} path={item.href} element={item.component} />
-          ))}
-          <Route path="/test_result" element={<Result />} />
-          <Route path="/details/:id" element={<Details cards={cards} addToCompare={addToCompare} />} />
-
-        </Routes>
+          <Routes>
+            {navItems.map((item, index) => (
+              <Route key={index} path={item.href} element={item.component} />
+            ))}
+            <Route path="/test_result" element={<Result />} />
+            <Route
+              path="/details/:id"
+              element={<Details cards={cards} addToCompare={addToCompare} />}
+            />
+          </Routes>
+        </div>
       </div>
       <Footer />
     </div>

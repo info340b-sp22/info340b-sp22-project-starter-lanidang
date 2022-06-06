@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { useParams } from "react-router";
+import { NavLink } from "react-router-dom";
 
 export default function Details({ cards, addToCompare }) {
   const { id } = useParams();
@@ -87,6 +88,13 @@ export default function Details({ cards, addToCompare }) {
             <div className="flex-1">{listItems2}</div>
           </div>
           <div className="pt-8">
+            <NavLink
+              to="/"
+              className="mb-4 mr-2 bg-slate-500 rounded-lg pl-2 py-2 pr-8 text-white text-center hover:bg-slate-700 md:ml-24 md:mt-4 md:pr-24"
+              style={{ textDecoration: "none" }}
+            >
+              Back >
+            </NavLink>
             <button
               className="py-2 px-4 bg-blue-200 rounded-lg transition duration-300 hover:bg-blue-300"
               onClick={handleClickAdd}

@@ -68,11 +68,11 @@ ul {
 }
 
 .result-container {
-  background-color: white;
   background-image: url("../public/img/result-bg.jpeg");
-  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
   /* opacity: 0.5; */
   /* border-radius: 25px; */
 }

@@ -12,7 +12,7 @@ export function Card({
   latest_price,
   infoItems,
   id,
-  handleClick,
+  setSelectedCards,
 }) {
 
   const navigate = useNavigate();
@@ -50,12 +50,11 @@ export function Card({
             ))}
           </div>
         </div>
-        <div className="flex-none">
-          {/* <HiOutlinePlusCircle size={24} /> */}
+        {/* <div className="flex-none">
           <>
-            <HiOutlinePlusCircle size={24} onClick={handleClick} />
+            <HiOutlinePlusCircle size={24} onClick={setSelectedCards} />
           </>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export function Header({ navItems }) {
     return ("w-56 h-12 my-1 flex justify-center items-center text-center text-gray-900 no-underline " + (isActive ? 'bg-slate-200' : ''))
   }
   return (
-    <header className="px-6 h-20 flex justify-between align-center bg-slate-200">
+    <header className="px-6 h-20 flex justify-between align-center ">
       <span className="text-2xl font-medium flex items-center">
         Laptop Search
       </span>
@@ -33,7 +33,7 @@ export function Header({ navItems }) {
               key={index}
               className="px-4 flex justify-center items-center"
             >
-              <NavLink to={item.href} className={getCls}>{item.text}</NavLink>
+              <NavLink to={item.href} className={getCls} >{item.text}</NavLink>
               {/* <a className="text-gray-900 no-underline" href={item.href}>{item.text}</a> */}
             </li>
           ))}

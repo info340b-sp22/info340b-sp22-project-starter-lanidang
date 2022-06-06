@@ -42,27 +42,28 @@ export function Result() {
   }
 
   return (
-    <main className="pl-4 result-container relative">
-      <img src="../../img/bestChoice.png" alt="best choice" width="300" />
-      <h1 className="font-medium text-3xl text-indigo-700 ml-8 mb-3">
-        Here's the best choice for you:
+    <main className="w-full h-full max-w-screen-md flex flex-col">
+      <h1 className="font-medium text-2xl md:text-3xl text-slate-700 my-3 mb-4 ml-2 md:ml-24">
+        Here's the best choice for you.
       </h1>
-      <ul>
-        <li className="mb-2 hover:bg-slate-300">➡️ Price: {result.price}</li>
-        <li className="mb-2 hover:bg-slate-300">➡️ Brand: {result.Brand}</li>
-        <li className="mb-2 hover:bg-slate-300">
-          ➡️ RAM Size: {result.RAM_SiZE}
-        </li>
-        <li className="mb-2 hover:bg-slate-300">➡️ OS: {result.os}</li>
-        <li className="mb-2 hover:bg-slate-300">➡️ Weight: {result.weight}</li>
-      </ul>
-      <div className="flex">
+      <div className="flex flex-col justify-start item-start">
+        <div className="mb-2 md:text-xl ml-2 md:ml-24">Price: {result.price}</div>
+        <div className="mb-2 md:text-xl ml-2 md:ml-24 ">Brand: {result.Brand}</div>
+        <div className="mb-2 md:text-xl ml-2 md:ml-24 ">RAM Size: {result.RAM_SiZE}</div>
+        <div className="mb-2 md:text-xl ml-2 md:ml-24 ">OS: {result.os}</div>
+        <div className="ml-2 md:text-xl md:ml-24 ">Weight: {result.weight}</div>
+      </div>
+      <h1 className="ml-2 font-medium text-3xl text-slate-700 mb-4 md:ml-24 md:mb-0">
+        ___
+      </h1>
+      <div className="ml-2 flex">
         {/* <button className="m-auto mb-4 bg-indigo-700 rounded-lg p-2 text-white" type='button' onClick={() => handleSubmit()}>Back to HOME page</button> */}
         <NavLink
           to="/takeTest"
-          className="m-auto mb-4 bg-indigo-700 rounded-lg p-2 text-white"
+          className="mb-4 bg-slate-500 rounded-lg pl-2 py-2 pr-8 text-white text-center hover:bg-slate-700 md:ml-24 md:mt-4 md:pr-24"
+          style={{ textDecoration: 'none' }}
         >
-          Back
+          Back >
         </NavLink>
       </div>
     </main>

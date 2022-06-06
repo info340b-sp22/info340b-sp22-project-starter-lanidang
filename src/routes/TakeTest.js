@@ -10,7 +10,7 @@ const questions = [
     id: "Frequency",
   },
   {
-    q: "What do you use your LapTop for",
+    q: "What do you usually use your LapTop for?",
     options: ["Work/Study", "Play games", "Watch Videos"],
     id: "Useage"
   }
@@ -57,20 +57,16 @@ export default function TakeTest() {
   console.log("render TakeTest", answers);
 
   return (
-    <main className="max-w-screen-md mx-auto mt-6">
-        <div className="w-full flex flex-col items-stretch ml-2">
-          <img
-            className="object-cover h-96 mx-12"
-            src="/img/clement-helardot-95YRwf6CNw8-unsplash.jpg"
-            alt="Laptop Model Test"
-          />
+    <main className="max-w-screen-md mt-2 ml-2 md:ml-24">
+      <h1 className="font-medium text-2xl md:text-3xl text-slate-700 md:my-3 md:mb-4">Take your quiz:</h1>
+        <div className="w-full flex flex-col items-stretch">
           {questions.map((item, i) => (
             <Question key={i} {...item} handleClick={handleClick} sValue={answers[item.id]} />
           ))}
           
         </div>
-        <div className="w-full flex mt-4 mb-4 ml-2">
-          <Button variant="primary" onClick={handleSubmit}>Submit</Button>
+        <div className="w-full flex mt-4 mb-4">
+          <Button variant="secondary" onClick={handleSubmit}>Submit</Button>
         </div>
     </main>
   );
