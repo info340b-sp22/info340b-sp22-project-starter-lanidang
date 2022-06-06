@@ -1,18 +1,11 @@
 import React from "react";
 import { HiOutlineX } from "react-icons/hi";
 import filter_options from "../data/filter_options.json";
-import { HiChevronRight } from "react-icons/hi";
 
 const Select = ({ options, label, name, value, onChange }) => {
   const handleChange = (e) => {
     const n = { [name]: e.target.value };
-    const selectedItem = options.reduce((item) => {
-      if (typeof value === "string") {
-        return item === e.target.value;
-      } else {
-        return item.text === e.target.value;
-      }
-    });
+
     console.log("select changed", n);
     onChange(n);
   };
@@ -51,11 +44,7 @@ const RangeInput = ({
   const r1 = React.useRef();
   const r2 = React.useRef();
 
-  const handleChange = (e) => {
-    const n = { [name]: Number(e.target.value) };
-    console.log("range changed", n);
-    onChange(n);
-  };
+
 
   const handleR1Change = (e) => {
     setV1(e.target.value);
@@ -159,7 +148,7 @@ export const FilterBar = ({
       className={
         close
           ? "hidden"
-          : "fixed" + " bg-slate-100 inset-y-0 right-0 w-full md:w-1/2 z-20"
+          : "fixed bg-slate-100 inset-y-0 right-0 w-full md:w-1/2 z-20"
       }
     >
       <HiOutlineX

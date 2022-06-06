@@ -49,16 +49,8 @@ export default function Details({ cards, addToCompare }) {
     <div className="py-1">{number}</div>
   ));
 
-  const [addCard, setAddCard] = useState([]);
   const [show, setShow] = useState(false);
-  const handleClick = () => {
-    console.log("Added laptop");
-    let newCard = addCard.push;
-    console.log("addCard push", newCard);
 
-    setAddCard({ ...addCard, newCard });
-    setShow(true);
-  };
 
   const handleClose = () => {
     console.log("Closed popup");

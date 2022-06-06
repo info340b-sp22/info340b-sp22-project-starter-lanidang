@@ -1,7 +1,5 @@
 import React from "react";
 import { CardList } from "../components/Card";
-// import data from "./data/Cleaned_Laptop_data.json";
-import { HiOutlineX } from "react-icons/hi";
 import { filter_cards } from "../util";
 import { FilterBar } from "../components/FilterBar";
 import filter_options from "../data/filter_options.json";

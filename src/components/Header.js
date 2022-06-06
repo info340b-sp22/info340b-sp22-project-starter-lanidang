@@ -51,7 +51,7 @@ export function Header({ navItems }) {
             key={index}
             className="px-4 hover:bg-slate-300 flex justify-center items-center"
           >
-            <NavLink to={item.href} className={(isActive) => (isActive ? "text-gray-700" : "text-gray-900 " + "no-underline")} >{item.text}</NavLink>
+            <NavLink to={item.href} className={(isActive) => (isActive ? "text-gray-700" : "text-gray-900 no-underline")} >{item.text}</NavLink>
             {/* <a className="text-gray-900 no-underline" href={item.href}>
               {item.text}
             </a> */}
