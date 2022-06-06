@@ -34,7 +34,7 @@ function App() {
         const processed_data = process_cards(data);
         setCards(process_cards(processed_data));
         // setDisplayCards(() => filter_cards(processed_data, formValues));
-        setDisplayCards(() => processed_data);
+        setDisplayCards(process_cards(processed_data));
         setIsLoading(false);
       })
       .catch((error) => setAlertMessage(error.message));
@@ -52,6 +52,10 @@ function App() {
 
   function handleSelect(addCard) {
     setSelectedCards([...selectedCards, addCard]);
+  }
+
+  const addToCompare = (card) => {
+    setSelectedCards((old) => [...old, card]);
   }
 
   const navItems = [
@@ -76,14 +80,14 @@ function App() {
       href: "/takeTest",
       component: <TakeTest selectedCards={selectedCards} />,
     },
-    { text: "Compare Tool", href: "/compareTool", component: <CompareTool selectedCards={selectedCards} cards={cards} /> },
+    { text: "Compare Tool", href: "/compareTool", component: <CompareTool selectedCards={selectedCards} cards={cards} setSelectedCards={setSelectedCards} /> },
   ];
 
   console.log("render App", { cards });
 
   return (
     <div className="flex flex-col h-screen">
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col">
         <Header navItems={navItems} />
 
         {alertMessage &&
@@ -95,7 +99,7 @@ function App() {
             <Route key={index} path={item.href} element={item.component} />
           ))}
           <Route path="/test_result" element={<Result />} />
-          <Route path="/details" element={<Details />} />
+          <Route path="/details/:id" element={<Details cards={cards} addToCompare={addToCompare} />} />
 
         </Routes>
       </div>

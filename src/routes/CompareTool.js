@@ -1,8 +1,19 @@
 import React from "react";
 
-export default function CompareTool({ selectedCards, cards }) {
+export default function CompareTool({ selectedCards, cards, setSelectedCards }) {
+
+  const removeSelectedCards = (c2) => {
+    console.log('remove card', c2);
+    setSelectedCards(old => old.filter(c => c2.id !== c.id))
+  }
+
+
   let sCardData = cards.length !== 0 ? selectedCards.map((i) => cards[i]) : [];
+
   console.log("render compareTool", { selectedCards, cards, sCardData });
+
+  sCardData = selectedCards.map((i) => i);
+
   const display_fields = [
     "brand",
     "model",
@@ -19,6 +30,7 @@ export default function CompareTool({ selectedCards, cards }) {
     "Processor Name",
     "Latest Price",
   ];
+
   let content;
   if (sCardData.length === 0) {
     content = <div>No model selected</div>;
@@ -38,12 +50,14 @@ export default function CompareTool({ selectedCards, cards }) {
       </div>
     ));
   }
+
   return (
     <main className="max-w-screen-md mx-auto">
       <div className="my-6 mx-4">
         <div className="flex gap-3">
           {sCardData.map((c, i) => (
             <div className="flex-1" key={i}>
+              <button className="py-2 px-3 mb-6 bg-red-300 rounded-lg" onClick={() => removeSelectedCards(c)}>Delete</button>
               <img
                 className="object-cover w-full h-52"
                 src={c.imgUrl}

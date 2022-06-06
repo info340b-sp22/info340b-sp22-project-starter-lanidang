@@ -1,10 +1,11 @@
 export const filter_cards = (cards, formValues) => {
   console.log('filter cards', {cards});
-  return cards.filter((card) => {
+  const r = cards.filter((card) => {
     let result = true;
     Object.keys(formValues).forEach((key) => {
       if (key === "price") {
-        result = result;
+        let t = card[key] >= Number(formValues[key]['min']) && card[key] <= Number(formValues[key]['max']);
+        result = result && t;
       } else {
         result =
           result &&
@@ -13,6 +14,8 @@ export const filter_cards = (cards, formValues) => {
     });
     return result;
   });
+  // console.log('filter result', r);
+  return r;
 };
 
 export const process_cards = (cards) =>

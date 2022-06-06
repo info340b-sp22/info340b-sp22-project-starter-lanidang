@@ -2,6 +2,7 @@
     {
         "name": "brand",
         "label": "Brand",
+        "type": "select",
         "options": [
             "All",
             "Lenovo",
@@ -29,59 +30,63 @@
     {
         "name": "price",
         "label": "Price",
+        "type": "range",
+        "min": 0,
+        "max": 3000,
         "options": [
             {
                 "text": "All"
             },
             {
-                "text": "0-500",
+                "text": "0-100",
                 "start": 0,
+                "end": 100
+            },
+            {
+                "text": "100-200",
+                "start": 100,
+                "end": 200
+            },
+            {
+                "text": "200-300",
+                "start": 200,
+                "end": 300
+            },
+            {
+                "text": "300-400",
+                "start": 300,
+                "end": 400
+            },
+            {
+                "text": "400-500",
+                "start": 400,
                 "end": 500
             },
             {
-                "text": "500-1000",
+                "text": "500-600",
                 "start": 500,
-                "end": 1000
+                "end": 600
             },
             {
-                "text": "1000-1500",
-                "start": 1000,
-                "end": 1500
+                "text": "600-700",
+                "start": 600,
+                "end": 700
             },
             {
-                "text": "1500-2000",
-                "start": 1500,
-                "end": 2000
+                "text": "700-800",
+                "start": 700,
+                "end": 800
             },
             {
-                "text": "2000-2500",
-                "start": 2000,
-                "end": 2500
-            },
-            {
-                "text": "2500-3000",
-                "start": 2500,
-                "end": 3000
-            },
-            {
-                "text": "3000-3500",
-                "start": 3000,
-                "end": 3500
-            },
-            {
-                "text": "3500-4000",
-                "start": 3500,
-                "end": 4000
-            },
-            {
-                "text": "4000",
-                "start": 4000
+                "text": "800+",
+                "start": 800
             }
         ]
     },
     {
         "name": "ram_gb",
-        "label": "ram_size",
+        "label": "Ram Size",
+        "type": "select",
         "options": [
             "All",
             "4 GB GB",
@@ -92,7 +97,8 @@
     },
     {
         "name": "os",
-        "label": "os",
+        "label": "OS",
+        "type": "select",
         "options": [
             "All",
             "Windows",
@@ -102,7 +108,8 @@
     },
     {
         "name": "processor_brand",
-        "label": "processor_brand",
+        "label": "Processor Brand",
+        "type": "select",
         "options": [
             "All",
             "AMD",
@@ -115,6 +122,7 @@
     {
         "name": "weight",
         "label": "Weight",
+        "type": "select",
         "options": [
             "All",
             "ThinNlight",

@@ -35,7 +35,6 @@ export default function Home({cards, setCards, displayCards, setDisplayCards, se
     setFilterOpen(false);
     setDisplayCards(() => filter_cards(cards, formValues));
   };
-  console.log("rendering");
 
   return (
     <main className="max-w-screen-lg mx-auto">

@@ -41,11 +41,6 @@ export function Result() {
     };
   }
 
-  const handleSubmit = () => {
-    console.log("nav to home");
-    // <NavLink to='/' />
-  };
-
   return (
     <main className="pl-4 result-container relative">
       <img src="../../img/bestChoice.png" alt="best choice" width="300" />
