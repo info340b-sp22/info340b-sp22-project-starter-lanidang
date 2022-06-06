@@ -49,16 +49,7 @@ export default function Details({ cards, addToCompare }) {
     <div className="py-1">{number}</div>
   ));
 
-  const [addCard, setAddCard] = useState([]);
   const [show, setShow] = useState(false);
-  const handleClick = () => {
-    console.log("Added laptop");
-    let newCard = addCard.push;
-    console.log("addCard push", newCard);
-
-    setAddCard({ ...addCard, newCard });
-    setShow(true);
-  };
 
   const handleClose = () => {
     console.log("Closed popup");
@@ -93,7 +84,7 @@ export default function Details({ cards, addToCompare }) {
               className="mb-4 mr-2 bg-slate-500 rounded-lg pl-2 py-2 pr-8 text-white text-center hover:bg-slate-700 md:ml-24 md:mt-4 md:pr-24"
               style={{ textDecoration: "none" }}
             >
-              Back >
+              Back 
             </NavLink>
             <button
               className="py-2 px-4 bg-blue-200 rounded-lg transition duration-300 hover:bg-blue-300"

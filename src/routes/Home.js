@@ -6,7 +6,7 @@ import { filter_cards } from "../util";
 import { FilterBar } from "../components/FilterBar";
 import filter_options from "../data/filter_options.json";
 
-export default function Home({cards, setCards, displayCards, setDisplayCards, selectedCards, setSelectedCards, isLoading, setIsLoading}) {
+export default function Home({cards, displayCards, setDisplayCards, selectedCards, setSelectedCards, isLoading}) {
   const [filterOpen, setFilterOpen] = React.useState(false);
   const [formValues, setFormValues] = React.useState(() => {
     const default_form_values = {};
@@ -59,7 +59,7 @@ export default function Home({cards, setCards, displayCards, setDisplayCards, se
       {isLoading ? (
         <div>Loading...</div>
       ) : (
-        <CardList cards={displayCards} selectedCards={selectedCards} setSelectedCards={setSelectedCards} />
+        <CardList cards={displayCards} setSelectedCards={setSelectedCards} />
       )}
     </main>
   );
