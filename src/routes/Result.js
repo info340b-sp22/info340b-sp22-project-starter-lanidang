@@ -53,10 +53,8 @@ export function Result() {
         <div className="mb-2 md:text-xl ml-2 md:ml-24 ">OS: {result.os}</div>
         <div className="ml-2 md:text-xl md:ml-24 ">Weight: {result.weight}</div>
       </div>
-      <h1 className="ml-2 font-medium text-3xl text-slate-700 mb-4 md:ml-24 md:mb-0">
-        ___
-      </h1>
-      <div className="ml-2 flex">
+      <div class="line ml-2 mb-4 md:ml-24 md:mb-6"></div>
+      <div className="ml-2 md:ml-0 flex">
         {/* <button className="m-auto mb-4 bg-indigo-700 rounded-lg p-2 text-white" type='button' onClick={() => handleSubmit()}>Back to HOME page</button> */}
         <NavLink
           to="/takeTest"
