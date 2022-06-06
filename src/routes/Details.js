@@ -5,34 +5,6 @@ import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { useParams } from "react-router";
 
-const example = [
-  {
-    brand: "Lenovo",
-    model: "A6-9225",
-    processor_brand: "AMD",
-    processor_name: "A6-9225 Processor",
-    processor_gnrtn: "10th",
-    ram_gb: "4 GB GB",
-    ram_type: "DDR4",
-    ssd: "0 GB",
-    hdd: "1024 GB",
-    os: "Windows",
-    os_bit: "64-bit",
-    graphic_card_gb: 0,
-    weight: "ThinNlight",
-    display_size: "Missing",
-    warranty: 0,
-    Touchscreen: "No",
-    msoffice: "No",
-    latest_price: 24990,
-    old_price: 32790,
-    discount: 23,
-    star_rating: 3.7,
-    ratings: 63,
-    reviews: 12,
-  },
-];
-
 export default function Details({ cards, addToCompare }) {
   const { id } = useParams();
 
@@ -135,51 +107,6 @@ export default function Details({ cards, addToCompare }) {
           </Button>
         </Modal.Footer>
       </Modal>
-    </div>
-  );
-
-  return (
-    <div className="flex flex-col h-screen">
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-6 col-sm-6">
-            <img className="" src={cardData.imgUrl} alt={"Laptop"} />
-          </div>
-
-          <div className="col-md-6 col-sm-6 mb-50">
-            <h1 className="font-bold">
-              {cardData.brand} {cardData.model}
-            </h1>
-            <h2 className="font-bold text-blue-700">${cardData.price}</h2>
-
-            <div className="mt-10">
-              <ul>{listItems1}</ul>
-              <ul>{listItems2}</ul>
-            </div>
-            <button
-              type="button"
-              className="mt-10 laptop_button"
-              onClick={handleClick}
-            >
-              Add to Compare Tool
-            </button>
-            <Modal show={show} onHide={handleClose}>
-              <Modal.Header closeButton>Added New Laptop</Modal.Header>
-              <Modal.Body>
-                You added {example[0].brand} to the compare tool.
-              </Modal.Body>
-              <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                  Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  OK
-                </Button>
-              </Modal.Footer>
-            </Modal>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

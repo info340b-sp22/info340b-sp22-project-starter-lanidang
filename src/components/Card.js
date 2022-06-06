@@ -78,13 +78,9 @@ export function CardList({ cards, setSelectedCards, selectedCards }) {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>Added New Laptop</Modal.Header>
         <Modal.Body>
-          {/* You added {brand} {model} to the compare tool. */}
-          Model added to the compare tool
+          {/* You have added {cardData.brand} {cardData.model} to the compare tool. */}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
           <Button variant="primary" onClick={handleClose}>
             OK
           </Button>
