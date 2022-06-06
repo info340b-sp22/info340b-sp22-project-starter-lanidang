@@ -72,6 +72,7 @@ function App() {
           setDisplayCards={setDisplayCards}
           isLoading={isLoading}
           setIsLoading={setIsLoading}
+          addToCompare={addToCompare}
         />
       ),
     },

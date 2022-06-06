@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { HiOutlinePlusCircle } from 'react-icons/hi';
 
 export function Card({
+  data,
   imgUrl,
   imgAlt,
   brand,
@@ -12,6 +14,7 @@ export function Card({
   infoItems,
   id,
   setSelectedCards,
+  addToCompare
 }) {
 
   const navigate = useNavigate();
@@ -50,16 +53,14 @@ export function Card({
           </div>
         </div>
         {/* <div className="flex-none">
-          <>
-            <HiOutlinePlusCircle size={24} onClick={setSelectedCards} />
-          </>
+          <HiOutlinePlusCircle size={24} onClick={() => addToCompare(data)} />
         </div> */}
       </div>
     </div>
   );
 }
 
-export function CardList({ cards, setSelectedCards, selectedCards }) {
+export function CardList({ cards, setSelectedCards, addToCompare }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => {
@@ -70,7 +71,7 @@ export function CardList({ cards, setSelectedCards, selectedCards }) {
   return (
     <div className="p-6 gap-6 w-full grid grid-cols-1 md:grid-cols-3 auto-rows-[25rem]">
       {cards.map((card, index) => (
-        <Card {...card} key={index} handleClick={setSelectedCards} />
+        <Card data={card} {...card} key={index} handleClick={setSelectedCards} addToCompare={addToCompare} />
       ))}
 
       <Modal show={show} onHide={handleClose}>

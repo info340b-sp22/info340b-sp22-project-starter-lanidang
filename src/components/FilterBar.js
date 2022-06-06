@@ -9,6 +9,7 @@ const Select = ({ options, label, name, value, onChange }) => {
     console.log("select changed", n);
     onChange(n);
   };
+
   return (
     <div className="py-2 relative flex items-center">
       <label className="inline-block w-36" htmlFor={name}>
@@ -38,13 +39,11 @@ const RangeInput = ({
   min: minValue,
   max: maxValue,
 }) => {
-  const [v1, setV1] = React.useState(minValue);
-  const [v2, setV2] = React.useState(maxValue);
+  const [v1, setV1] = React.useState(Number(minValue));
+  const [v2, setV2] = React.useState(Number(maxValue));
 
   const r1 = React.useRef();
   const r2 = React.useRef();
-
-
 
   const handleR1Change = (e) => {
     setV1(e.target.value);
@@ -105,7 +104,7 @@ const RangeInput = ({
                 className="w-20 px-2 py-1 rounded-lg"
               />
             </span>
-            {v2 < v1 && <span className="ml-4 text-red-500">Invalid Value!</span>}
+            {/* {v2 < v1 && <span className="ml-4 text-red-500">Invalid Value!</span>} */}
           </div>
           <input
             ref={r2}
@@ -137,6 +136,7 @@ const FormItem = ({ type, ...props }) => {
 };
 
 export const FilterBar = ({
+  ref,
   close,
   closeFilter,
   onSubmit,
@@ -146,9 +146,9 @@ export const FilterBar = ({
   return (
     <div
       className={
-        close
+        (close
           ? "hidden"
-          : "fixed bg-slate-100 inset-y-0 right-0 w-full md:w-1/2 z-20"
+          : "fixed bg-slate-100 inset-y-0 right-0 w-full md:w-1/2 z-20") + " transition-all duration-300"
       }
     >
       <HiOutlineX

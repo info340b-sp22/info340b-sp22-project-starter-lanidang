@@ -51,7 +51,6 @@ export default function Details({ cards, addToCompare }) {
 
   const [show, setShow] = useState(false);
 
-
   const handleClose = () => {
     console.log("Closed popup");
     setShow(false);
@@ -63,7 +62,16 @@ export default function Details({ cards, addToCompare }) {
   };
 
   return (
-    <div className="w-full h-full max-w-screen-xl mx-auto flex px-6 md:px-8 py-12">
+    <div className=" w-full h-full max-w-screen-xl mx-auto flex flex-col px-6 md:px-8 py-8">
+      <div className="mb-8">
+        <NavLink
+          to="/"
+          className="bg-slate-500 rounded-lg py-2 px-3 text-white text-center hover:bg-slate-700 "
+          style={{ textDecoration: "none" }}
+        >
+          Back
+        </NavLink>
+      </div>
       <div className="md:h-2/3 md:max-h-[40rem] flex flex-col items-stretch md:flex-row gap-8 md:gap-12">
         <img
           className="w-full md:w-1/2 flex-none rounded-lg object-cover"
@@ -80,13 +88,6 @@ export default function Details({ cards, addToCompare }) {
             <div className="flex-1">{listItems2}</div>
           </div>
           <div className="pt-8">
-            <NavLink
-              to="/"
-              className="mb-4 mr-2 bg-slate-500 rounded-lg pl-2 py-2 pr-8 text-white text-center hover:bg-slate-700 md:ml-24 md:mt-4 md:pr-24"
-              style={{ textDecoration: "none" }}
-            >
-              Back >
-            </NavLink>
             <button
               className="py-2 px-4 bg-blue-200 rounded-lg transition duration-300 hover:bg-blue-300"
               onClick={handleClickAdd}
