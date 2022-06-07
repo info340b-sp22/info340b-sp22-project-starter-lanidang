@@ -14,7 +14,6 @@ export const filter_cards = (cards, formValues) => {
     });
     return result;
   });
-  // console.log('filter result', r);
   return r;
 };
 

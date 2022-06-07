@@ -34,7 +34,6 @@ const Select = ({ options, label, name, value, onChange }) => {
 const RangeInput = ({
   label,
   name,
-  value,
   onChange,
   min: minValue,
   max: maxValue,
@@ -104,7 +103,6 @@ const RangeInput = ({
                 className="w-20 px-2 py-1 rounded-lg"
               />
             </span>
-            {/* {v2 < v1 && <span className="ml-4 text-red-500">Invalid Value!</span>} */}
           </div>
           <input
             ref={r2}
@@ -136,7 +134,6 @@ const FormItem = ({ type, ...props }) => {
 };
 
 export const FilterBar = ({
-  ref,
   close,
   closeFilter,
   onSubmit,

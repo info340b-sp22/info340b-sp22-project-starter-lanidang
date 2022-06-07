@@ -15,7 +15,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [cards, setCards] = useState([]);
   const [displayCards, setDisplayCards] = useState([]);
-  // const [selectedCards, setSelectedCards] = useState([82, 122]);
   const [selectedCards, setSelectedCards] = useState([]);
   const [alertMessage, setAlertMessage] = useState(null);
 
@@ -33,7 +32,6 @@ function App() {
         }
         const processed_data = process_cards(data);
         setCards(process_cards(processed_data));
-        // setDisplayCards(() => filter_cards(processed_data, formValues));
         setDisplayCards(process_cards(processed_data));
         setIsLoading(false);
       })

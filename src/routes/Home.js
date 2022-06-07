@@ -6,13 +6,11 @@ import filter_options from "../data/filter_options.json";
 
 export default function Home({
   cards,
-  setCards,
   displayCards,
   setDisplayCards,
   selectedCards,
   setSelectedCards,
   isLoading,
-  setIsLoading,
   addToCompare
 }) {
   const [filterOpen, setFilterOpen] = React.useState(false);
@@ -35,12 +33,10 @@ export default function Home({
   const closeFilter = () => {
     console.log("close filter");
     setFilterOpen(false);
-    // filterRef.current.classList.remove('translate-x-full');
   };
 
   const openFilter = () => {
     console.log("open filter");
-    // filterRef.current.classList.add('translate-x-full');
     setFilterOpen(true);
   };
 
@@ -71,7 +67,6 @@ export default function Home({
         </button>
       </div>
       <FilterBar
-        // ref={filterRef}
         close={!filterOpen}
         closeFilter={closeFilter}
         onSubmit={handleSubmit}

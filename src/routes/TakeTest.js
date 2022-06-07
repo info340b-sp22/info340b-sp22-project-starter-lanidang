@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-// import { useHistory } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 const questions = [
@@ -46,7 +45,6 @@ export default function TakeTest() {
 
   const handleSubmit = () => {
     console.log("nav:");
-    // console.log("answer:", answers);
     if (Object.keys(answers).length < 2) {
       showAlert()
     } else {

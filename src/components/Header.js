@@ -34,7 +34,6 @@ export function Header({ navItems }) {
               className="px-4 flex justify-center items-center"
             >
               <NavLink to={item.href} className={getCls} >{item.text}</NavLink>
-              {/* <a className="text-gray-900 no-underline" href={item.href}>{item.text}</a> */}
             </li>
           ))}
         </ul>
@@ -44,7 +43,6 @@ export function Header({ navItems }) {
           onClick={closeMenu}
         />
       </div>
-      {/* Desktop Nav */}
       <ul className={"hidden md:flex items-stretch h-full"}>
         {navItems.map((item, index) => (
           <li
@@ -52,9 +50,6 @@ export function Header({ navItems }) {
             className="px-4 hover:bg-slate-300 flex justify-center items-center"
           >
             <NavLink to={item.href} className={(isActive) => (isActive ? "text-gray-700" : "text-gray-900 no-underline")} >{item.text}</NavLink>
-            {/* <a className="text-gray-900 no-underline" href={item.href}>
-              {item.text}
-            </a> */}
           </li>
         ))}
       </ul>
